@@ -62,14 +62,14 @@ Wire Wire Line
 	2400 3150 2400 3200
 Connection ~ 2400 3200
 $Comp
-L power:GND #PWR0101
+L power:GND #PWR04
 U 1 1 611ED3D7
-P 1850 3300
-F 0 "#PWR0101" H 1850 3050 50  0001 C CNN
-F 1 "GND" H 1855 3127 50  0000 C CNN
-F 2 "" H 1850 3300 50  0001 C CNN
-F 3 "" H 1850 3300 50  0001 C CNN
-	1    1850 3300
+P 1850 3200
+F 0 "#PWR04" H 1850 2950 50  0001 C CNN
+F 1 "GND" H 1855 3027 50  0000 C CNN
+F 2 "" H 1850 3200 50  0001 C CNN
+F 3 "" H 1850 3200 50  0001 C CNN
+	1    1850 3200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -77,7 +77,7 @@ Wire Wire Line
 Wire Wire Line
 	2000 3050 1850 3050
 Wire Wire Line
-	1850 3050 1850 3300
+	1850 3050 1850 3200
 Connection ~ 2000 3050
 Wire Wire Line
 	2000 3050 2000 3200
@@ -88,10 +88,10 @@ VBUS
 Text Label 4000 2250 3    50   ~ 0
 VBUS
 $Comp
-L power:GND #PWR0102
+L power:GND #PWR013
 U 1 1 611BFB70
 P 4050 6600
-F 0 "#PWR0102" H 4050 6350 50  0001 C CNN
+F 0 "#PWR013" H 4050 6350 50  0001 C CNN
 F 1 "GND" H 4055 6427 50  0000 C CNN
 F 2 "" H 4050 6600 50  0001 C CNN
 F 3 "" H 4050 6600 50  0001 C CNN
@@ -106,10 +106,10 @@ Connection ~ 4050 6500
 Wire Wire Line
 	4050 6500 4100 6500
 $Comp
-L power:+5V #PWR0103
+L power:+5V #PWR014
 U 1 1 611CB354
 P 4150 2200
-F 0 "#PWR0103" H 4150 2050 50  0001 C CNN
+F 0 "#PWR014" H 4150 2050 50  0001 C CNN
 F 1 "+5V" H 4165 2373 50  0000 C CNN
 F 2 "" H 4150 2200 50  0001 C CNN
 F 3 "" H 4150 2200 50  0001 C CNN
@@ -126,289 +126,289 @@ RESET
 $Comp
 L Switch:SW_Push SW1
 U 1 1 611D587C
-P 1700 1500
-F 0 "SW1" H 1700 1785 50  0000 C CNN
-F 1 "RESET" H 1700 1694 50  0000 C CNN
-F 2 "SamacSys_Parts:CMI126601D03" H 1700 1700 50  0001 C CNN
-F 3 "~" H 1700 1700 50  0001 C CNN
-	1    1700 1500
+P 1150 1150
+F 0 "SW1" H 1150 1435 50  0000 C CNN
+F 1 "RESET" H 1150 1344 50  0000 C CNN
+F 2 "SamacSys_Parts:CMI126601D03" H 1150 1350 50  0001 C CNN
+F 3 "~" H 1150 1350 50  0001 C CNN
+	1    1150 1150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1500 1500 1300 1500
+	950  1150 750  1150
 Wire Wire Line
-	1300 1500 1300 1550
+	750  1150 750  1200
 $Comp
-L power:GND #PWR0104
+L power:GND #PWR01
 U 1 1 611D7BB9
-P 1300 1550
-F 0 "#PWR0104" H 1300 1300 50  0001 C CNN
-F 1 "GND" H 1305 1377 50  0000 C CNN
-F 2 "" H 1300 1550 50  0001 C CNN
-F 3 "" H 1300 1550 50  0001 C CNN
-	1    1300 1550
+P 750 1200
+F 0 "#PWR01" H 750 950 50  0001 C CNN
+F 1 "GND" H 755 1027 50  0000 C CNN
+F 2 "" H 750 1200 50  0001 C CNN
+F 3 "" H 750 1200 50  0001 C CNN
+	1    750  1200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1900 1500 2250 1500
-Text Label 1950 1500 0    50   ~ 0
+	1350 1150 1700 1150
+Text Label 1400 1150 0    50   ~ 0
 RESET
 $Comp
-L power:+5V #PWR0105
+L power:+5V #PWR03
 U 1 1 611D9AB2
-P 2250 1200
-F 0 "#PWR0105" H 2250 1050 50  0001 C CNN
-F 1 "+5V" H 2265 1373 50  0000 C CNN
-F 2 "" H 2250 1200 50  0001 C CNN
-F 3 "" H 2250 1200 50  0001 C CNN
-	1    2250 1200
+P 1700 850
+F 0 "#PWR03" H 1700 700 50  0001 C CNN
+F 1 "+5V" H 1715 1023 50  0000 C CNN
+F 2 "" H 1700 850 50  0001 C CNN
+F 3 "" H 1700 850 50  0001 C CNN
+	1    1700 850 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R4
+L Device:R_Small R1
 U 1 1 611DA7FC
-P 2250 1350
-F 0 "R4" H 2309 1396 50  0000 L CNN
-F 1 "10k" H 2309 1305 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 2250 1350 50  0001 C CNN
-F 3 "~" H 2250 1350 50  0001 C CNN
-	1    2250 1350
+P 1700 1000
+F 0 "R1" H 1759 1046 50  0000 L CNN
+F 1 "10k" H 1759 955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 1700 1000 50  0001 C CNN
+F 3 "~" H 1700 1000 50  0001 C CNN
+	1    1700 1000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2250 1500 2250 1450
+	1700 1150 1700 1100
 Wire Wire Line
-	2250 1250 2250 1200
+	1700 900  1700 850 
 Text GLabel 3350 3750 0    50   Input ~ 0
 D+
 Text GLabel 3350 3850 0    50   Input ~ 0
 D-
 $Comp
-L Device:C_Small C7
-U 1 1 611E084C
-P 2800 4200
-F 0 "C7" H 2892 4246 50  0000 L CNN
-F 1 "1uF" H 2892 4155 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 2800 4200 50  0001 C CNN
-F 3 "~" H 2800 4200 50  0001 C CNN
-	1    2800 4200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2800 4100 2800 4050
-$Comp
-L power:GND #PWR0106
-U 1 1 611E1E82
-P 2800 4350
-F 0 "#PWR0106" H 2800 4100 50  0001 C CNN
-F 1 "GND" H 2900 4250 50  0000 C CNN
-F 2 "" H 2800 4350 50  0001 C CNN
-F 3 "" H 2800 4350 50  0001 C CNN
-	1    2800 4350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2800 4300 2800 4350
-$Comp
 L Device:C_Small C3
-U 1 1 611E4C6E
-P 4800 1200
-F 0 "C3" H 4892 1246 50  0000 L CNN
-F 1 "0.1uF" H 4892 1155 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 4800 1200 50  0001 C CNN
-F 3 "~" H 4800 1200 50  0001 C CNN
-	1    4800 1200
+U 1 1 611E084C
+P 2550 4450
+F 0 "C3" H 2642 4496 50  0000 L CNN
+F 1 "1uF" H 2642 4405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2550 4450 50  0001 C CNN
+F 3 "~" H 2550 4450 50  0001 C CNN
+	1    2550 4450
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	2550 4350 2550 4250
+$Comp
+L power:GND #PWR09
+U 1 1 611E1E82
+P 2550 4650
+F 0 "#PWR09" H 2550 4400 50  0001 C CNN
+F 1 "GND" H 2650 4550 50  0000 C CNN
+F 2 "" H 2550 4650 50  0001 C CNN
+F 3 "" H 2550 4650 50  0001 C CNN
+	1    2550 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 4550 2550 4650
 $Comp
 L Device:C_Small C4
-U 1 1 611E56B7
-P 5200 1200
-F 0 "C4" H 5292 1246 50  0000 L CNN
-F 1 "0.1uF" H 5292 1155 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 5200 1200 50  0001 C CNN
-F 3 "~" H 5200 1200 50  0001 C CNN
-	1    5200 1200
+U 1 1 611E4C6E
+P 3100 1150
+F 0 "C4" H 3192 1196 50  0000 L CNN
+F 1 "0.1uF" H 3192 1105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3100 1150 50  0001 C CNN
+F 3 "~" H 3100 1150 50  0001 C CNN
+	1    3100 1150
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C5
+U 1 1 611E56B7
+P 3500 1150
+F 0 "C5" H 3592 1196 50  0000 L CNN
+F 1 "0.1uF" H 3592 1105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3500 1150 50  0001 C CNN
+F 3 "~" H 3500 1150 50  0001 C CNN
+	1    3500 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C6
 U 1 1 611E5BB7
-P 5600 1200
-F 0 "C5" H 5692 1246 50  0000 L CNN
-F 1 "0.1uF" H 5692 1155 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 5600 1200 50  0001 C CNN
-F 3 "~" H 5600 1200 50  0001 C CNN
-	1    5600 1200
+P 3900 1150
+F 0 "C6" H 3992 1196 50  0000 L CNN
+F 1 "0.1uF" H 3992 1105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3900 1150 50  0001 C CNN
+F 3 "~" H 3900 1150 50  0001 C CNN
+	1    3900 1150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4800 1100 4800 1000
+	3100 1050 3100 950 
 Wire Wire Line
-	4800 1000 5200 1000
+	3100 950  3500 950 
 Wire Wire Line
-	5600 1000 5600 1100
+	3900 950  3900 1050
 Wire Wire Line
-	5200 1100 5200 1000
-Connection ~ 5200 1000
+	3500 1050 3500 950 
+Connection ~ 3500 950 
 Wire Wire Line
-	5200 1000 5600 1000
+	3500 950  3900 950 
 Wire Wire Line
-	5600 1300 5600 1400
+	3900 1250 3900 1350
 Wire Wire Line
-	5600 1400 5200 1400
+	3900 1350 3500 1350
 Wire Wire Line
-	4800 1400 4800 1300
+	3100 1350 3100 1250
 Wire Wire Line
-	5200 1300 5200 1400
-Connection ~ 5200 1400
+	3500 1250 3500 1350
+Connection ~ 3500 1350
 Wire Wire Line
-	5200 1400 4800 1400
+	3500 1350 3100 1350
 $Comp
-L power:+5V #PWR0107
+L power:+5V #PWR010
 U 1 1 611E9512
-P 4650 950
-F 0 "#PWR0107" H 4650 800 50  0001 C CNN
-F 1 "+5V" H 4665 1123 50  0000 C CNN
-F 2 "" H 4650 950 50  0001 C CNN
-F 3 "" H 4650 950 50  0001 C CNN
-	1    4650 950 
+P 2950 900
+F 0 "#PWR010" H 2950 750 50  0001 C CNN
+F 1 "+5V" H 2965 1073 50  0000 C CNN
+F 2 "" H 2950 900 50  0001 C CNN
+F 3 "" H 2950 900 50  0001 C CNN
+	1    2950 900 
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0108
+L power:GND #PWR011
 U 1 1 611EA48F
-P 4650 1450
-F 0 "#PWR0108" H 4650 1200 50  0001 C CNN
-F 1 "GND" H 4655 1277 50  0000 C CNN
-F 2 "" H 4650 1450 50  0001 C CNN
-F 3 "" H 4650 1450 50  0001 C CNN
-	1    4650 1450
+P 2950 1400
+F 0 "#PWR011" H 2950 1150 50  0001 C CNN
+F 1 "GND" H 2955 1227 50  0000 C CNN
+F 2 "" H 2950 1400 50  0001 C CNN
+F 3 "" H 2950 1400 50  0001 C CNN
+	1    2950 1400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4650 950  4650 1000
+	2950 900  2950 950 
 Wire Wire Line
-	4650 1000 4800 1000
-Connection ~ 4800 1000
+	2950 950  3100 950 
+Connection ~ 3100 950 
 Wire Wire Line
-	4800 1400 4650 1400
+	3100 1350 2950 1350
 Wire Wire Line
-	4650 1400 4650 1450
-Connection ~ 4800 1400
+	2950 1350 2950 1400
+Connection ~ 3100 1350
 $Comp
-L Device:R_Small R3
+L Device:R_Small R2
 U 1 1 611ED37F
-P 800 4200
-F 0 "R3" H 859 4246 50  0000 L CNN
-F 1 "1k" H 859 4155 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 800 4200 50  0001 C CNN
-F 3 "~" H 800 4200 50  0001 C CNN
-	1    800  4200
+P 2150 1000
+F 0 "R2" H 2209 1046 50  0000 L CNN
+F 1 "1k" H 2209 955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 2150 1000 50  0001 C CNN
+F 3 "~" H 2150 1000 50  0001 C CNN
+	1    2150 1000
 	1    0    0    -1  
 $EndComp
 Text Label 3350 4750 0    50   ~ 0
 E2
 Wire Wire Line
-	800  4100 800  4000
+	2150 900  2150 800 
 Wire Wire Line
-	800  4300 800  4500
+	2150 1100 2150 1300
 $Comp
-L power:GND #PWR0109
+L power:GND #PWR05
 U 1 1 611F523C
-P 800 4500
-F 0 "#PWR0109" H 800 4250 50  0001 C CNN
-F 1 "GND" H 805 4327 50  0000 C CNN
-F 2 "" H 800 4500 50  0001 C CNN
-F 3 "" H 800 4500 50  0001 C CNN
-	1    800  4500
+P 2150 1300
+F 0 "#PWR05" H 2150 1050 50  0001 C CNN
+F 1 "GND" H 2155 1127 50  0000 C CNN
+F 2 "" H 2150 1300 50  0001 C CNN
+F 3 "" H 2150 1300 50  0001 C CNN
+	1    2150 1300
 	1    0    0    -1  
 $EndComp
-Text Label 800  4000 3    50   ~ 0
+Text Label 2150 800  3    50   ~ 0
 E2
 Text Label 3250 3350 0    50   ~ 0
 AREF
 $Comp
-L Device:C_Small C6
+L Device:C_Small C7
 U 1 1 611F87E4
-P 6000 1200
-F 0 "C6" H 6092 1246 50  0000 L CNN
-F 1 "0.1uF" H 6092 1155 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 6000 1200 50  0001 C CNN
-F 3 "~" H 6000 1200 50  0001 C CNN
-	1    6000 1200
+P 4300 1150
+F 0 "C7" H 4392 1196 50  0000 L CNN
+F 1 "0.1uF" H 4392 1105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4300 1150 50  0001 C CNN
+F 3 "~" H 4300 1150 50  0001 C CNN
+	1    4300 1150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6000 1300 6000 1400
+	4300 1250 4300 1350
 Wire Wire Line
-	6000 1400 5600 1400
-Connection ~ 5600 1400
-Text Label 6000 1050 1    50   ~ 0
+	4300 1350 3900 1350
+Connection ~ 3900 1350
+Text Label 4300 1000 1    50   ~ 0
 AREF
 Wire Wire Line
-	6000 850  6000 1100
-Text Label 4750 2850 0    50   ~ 0
+	4300 800  4300 1050
+Text Label 4850 2850 2    50   ~ 0
 A1
-Text Label 4750 2950 0    50   ~ 0
+Text Label 4850 2950 2    50   ~ 0
 A2
-Text Label 4750 3050 0    50   ~ 0
+Text Label 4850 3050 2    50   ~ 0
 A3
-Text Label 4750 3150 0    50   ~ 0
+Text Label 4850 3150 2    50   ~ 0
 A4
-Text Label 4750 3250 0    50   ~ 0
+Text Label 4850 3250 2    50   ~ 0
 A5
-Text Label 4750 3350 0    50   ~ 0
+Text Label 4850 3350 2    50   ~ 0
 A6
-Text Label 4750 3450 0    50   ~ 0
+Text Label 4850 3450 2    50   ~ 0
 A7
-Text Label 4750 3650 0    50   ~ 0
+Text Label 4850 3650 2    50   ~ 0
 B0
-Text Label 4750 3750 0    50   ~ 0
+Text Label 4850 3750 2    50   ~ 0
 B1
-Text Label 4750 3850 0    50   ~ 0
+Text Label 4850 3850 2    50   ~ 0
 B2
-Text Label 4750 3950 0    50   ~ 0
+Text Label 4850 3950 2    50   ~ 0
 B3
-Text Label 4750 4050 0    50   ~ 0
+Text Label 4850 4050 2    50   ~ 0
 B4
-Text Label 4750 4150 0    50   ~ 0
+Text Label 4850 4150 2    50   ~ 0
 B5
-Text Label 4750 4250 0    50   ~ 0
+Text Label 4850 4250 2    50   ~ 0
 B6
-Text Label 4750 4350 0    50   ~ 0
+Text Label 4850 4350 2    50   ~ 0
 B7
-Text Label 4750 4550 0    50   ~ 0
+Text Label 4850 4550 2    50   ~ 0
 C0
-Text Label 4750 4650 0    50   ~ 0
+Text Label 4850 4650 2    50   ~ 0
 C1
-Text Label 4750 4750 0    50   ~ 0
+Text Label 4850 4750 2    50   ~ 0
 C2
-Text Label 4750 4850 0    50   ~ 0
+Text Label 4850 4850 2    50   ~ 0
 C3
-Text Label 4750 4950 0    50   ~ 0
+Text Label 4850 4950 2    50   ~ 0
 C4
-Text Label 4750 5050 0    50   ~ 0
+Text Label 4850 5050 2    50   ~ 0
 C5
-Text Label 4750 5150 0    50   ~ 0
+Text Label 4850 5150 2    50   ~ 0
 C6
-Text Label 4750 5250 0    50   ~ 0
+Text Label 4850 5250 2    50   ~ 0
 C7
-Text Label 4750 5450 0    50   ~ 0
+Text Label 4850 5450 2    50   ~ 0
 D0
-Text Label 4750 5550 0    50   ~ 0
+Text Label 4850 5550 2    50   ~ 0
 D1
-Text Label 4750 5650 0    50   ~ 0
+Text Label 4850 5650 2    50   ~ 0
 D2
-Text Label 4750 5750 0    50   ~ 0
+Text Label 4850 5750 2    50   ~ 0
 D3
-Text Label 4750 5850 0    50   ~ 0
+Text Label 4850 5850 2    50   ~ 0
 D4
-Text Label 4750 5950 0    50   ~ 0
+Text Label 4850 5950 2    50   ~ 0
 D5
-Text Label 4750 6050 0    50   ~ 0
+Text Label 4850 6050 2    50   ~ 0
 D6
-Text Label 4750 6150 0    50   ~ 0
+Text Label 4850 6150 2    50   ~ 0
 D7
 Wire Wire Line
 	3500 3550 3250 3550
@@ -499,10 +499,10 @@ Wire Wire Line
 Wire Wire Line
 	4700 3650 4850 3650
 $Comp
-L MCU_Microchip_AVR:AT90USB1286-MU U1
+L MCU_Microchip_AVR:AT90USB1286-MU U2
 U 1 1 611E4A9C
 P 4100 4450
-F 0 "U1" H 4700 2600 50  0000 C CNN
+F 0 "U2" H 4700 2600 50  0000 C CNN
 F 1 "AT90USB1286-MU" H 4500 2500 50  0000 C CNN
 F 2 "Package_DFN_QFN:QFN-64-1EP_9x9mm_P0.5mm_EP7.5x7.5mm" H 4100 4450 50  0001 C CIN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc7593.pdf" H 4100 4450 50  0001 C CNN
@@ -511,14 +511,14 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc7593.pdf" H 4100 4450 50
 $EndComp
 Wire Wire Line
 	4700 2750 4850 2750
-Text Label 4750 2750 0    50   ~ 0
+Text Label 4850 2750 2    50   ~ 0
 A0
 Wire Wire Line
 	3500 4550 3350 4550
 Text Label 3350 4550 0    50   ~ 0
 E0
 Wire Wire Line
-	2800 4050 3500 4050
+	2550 4250 3250 4250
 Wire Wire Line
 	3500 4650 3350 4650
 Text Label 3350 4650 0    50   ~ 0
@@ -578,161 +578,122 @@ F7
 $Comp
 L Amplifier_Operational:OP07 U2A1
 U 1 1 6124E6AD
-P 7200 1150
-F 0 "U2A1" H 7200 1400 50  0000 L CNN
-F 1 "OP07" H 7200 1300 50  0000 L CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 7250 1200 50  0001 C CNN
-F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/OP07.pdf" H 7250 1300 50  0001 C CNN
-	1    7200 1150
+P 5250 1200
+F 0 "U2A1" H 5250 1450 50  0000 L CNN
+F 1 "OP07" H 5250 1350 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5300 1250 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/OP07.pdf" H 5300 1350 50  0001 C CNN
+	1    5250 1200
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR0110
+L power:+5V #PWR015
 U 1 1 6124FF60
-P 7100 700
-F 0 "#PWR0110" H 7100 550 50  0001 C CNN
-F 1 "+5V" H 7115 873 50  0000 C CNN
-F 2 "" H 7100 700 50  0001 C CNN
-F 3 "" H 7100 700 50  0001 C CNN
-	1    7100 700 
+P 5150 750
+F 0 "#PWR015" H 5150 600 50  0001 C CNN
+F 1 "+5V" H 5165 923 50  0000 C CNN
+F 2 "" H 5150 750 50  0001 C CNN
+F 3 "" H 5150 750 50  0001 C CNN
+	1    5150 750 
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0111
+L power:GND #PWR016
 U 1 1 6125173E
-P 7100 1600
-F 0 "#PWR0111" H 7100 1350 50  0001 C CNN
-F 1 "GND" H 7105 1427 50  0000 C CNN
-F 2 "" H 7100 1600 50  0001 C CNN
-F 3 "" H 7100 1600 50  0001 C CNN
-	1    7100 1600
+P 5150 1650
+F 0 "#PWR016" H 5150 1400 50  0001 C CNN
+F 1 "GND" H 5155 1477 50  0000 C CNN
+F 2 "" H 5150 1650 50  0001 C CNN
+F 3 "" H 5150 1650 50  0001 C CNN
+	1    5150 1650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7100 1450 7100 1600
+	5150 1500 5150 1650
 Wire Wire Line
-	7100 850  7100 700 
+	5150 900  5150 750 
 $Comp
-L Device:LED_Small D2
-U 1 1 6125A750
-P 8050 1350
-F 0 "D2" V 8096 1282 50  0000 R CNN
-F 1 "Yellow" V 8005 1282 50  0000 R CNN
-F 2 "LED_SMD:LED_0201_0603Metric" V 8050 1350 50  0001 C CNN
-F 3 "~" V 8050 1350 50  0001 C CNN
-	1    8050 1350
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R_Small R2
+L Device:R_Small R4
 U 1 1 6125B9E9
-P 7850 1150
-F 0 "R2" V 7654 1150 50  0000 C CNN
-F 1 "1k" V 7745 1150 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 7850 1150 50  0001 C CNN
-F 3 "~" H 7850 1150 50  0001 C CNN
-	1    7850 1150
+P 5900 1200
+F 0 "R4" V 5704 1200 50  0000 C CNN
+F 1 "1k" V 5795 1200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 5900 1200 50  0001 C CNN
+F 3 "~" H 5900 1200 50  0001 C CNN
+	1    5900 1200
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	6900 1850 7600 1850
+	4950 1900 5650 1900
 Wire Wire Line
-	6900 1250 6900 1850
+	4950 1300 4950 1900
 Wire Wire Line
-	7600 1150 7600 1850
+	5650 1200 5650 1900
 Wire Wire Line
-	7500 1150 7600 1150
+	5550 1200 5650 1200
 Wire Wire Line
-	7750 1150 7600 1150
-Connection ~ 7600 1150
+	5800 1200 5650 1200
+Connection ~ 5650 1200
 Wire Wire Line
-	7950 1150 8050 1150
+	6000 1200 6100 1200
 Wire Wire Line
-	8050 1150 8050 1250
+	6100 1200 6100 1300
 $Comp
-L power:GND #PWR0112
+L power:GND #PWR017
 U 1 1 61284540
-P 8050 1550
-F 0 "#PWR0112" H 8050 1300 50  0001 C CNN
-F 1 "GND" H 8055 1377 50  0000 C CNN
-F 2 "" H 8050 1550 50  0001 C CNN
-F 3 "" H 8050 1550 50  0001 C CNN
-	1    8050 1550
+P 6100 1600
+F 0 "#PWR017" H 6100 1350 50  0001 C CNN
+F 1 "GND" H 6105 1427 50  0000 C CNN
+F 2 "" H 6100 1600 50  0001 C CNN
+F 3 "" H 6100 1600 50  0001 C CNN
+	1    6100 1600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8050 1450 8050 1550
-Text Label 6750 1050 0    50   ~ 0
+	6100 1500 6100 1600
+Text Label 4800 1100 0    50   ~ 0
 D6
 Wire Wire Line
-	6750 1050 6900 1050
+	4800 1100 4950 1100
 $Comp
-L power:+5V #PWR0113
+L power:+5V #PWR07
 U 1 1 6128F172
-P 3300 850
-F 0 "#PWR0113" H 3300 700 50  0001 C CNN
-F 1 "+5V" H 3315 1023 50  0000 C CNN
-F 2 "" H 3300 850 50  0001 C CNN
-F 3 "" H 3300 850 50  0001 C CNN
-	1    3300 850 
+P 2550 800
+F 0 "#PWR07" H 2550 650 50  0001 C CNN
+F 1 "+5V" H 2565 973 50  0000 C CNN
+F 2 "" H 2550 800 50  0001 C CNN
+F 3 "" H 2550 800 50  0001 C CNN
+	1    2550 800 
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0114
+L power:GND #PWR08
 U 1 1 6128F178
-P 3300 1450
-F 0 "#PWR0114" H 3300 1200 50  0001 C CNN
-F 1 "GND" H 3305 1277 50  0000 C CNN
-F 2 "" H 3300 1450 50  0001 C CNN
-F 3 "" H 3300 1450 50  0001 C CNN
-	1    3300 1450
+P 2550 1400
+F 0 "#PWR08" H 2550 1150 50  0001 C CNN
+F 1 "GND" H 2555 1227 50  0000 C CNN
+F 2 "" H 2550 1400 50  0001 C CNN
+F 3 "" H 2550 1400 50  0001 C CNN
+	1    2550 1400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3300 1400 3300 1450
+	2550 1350 2550 1400
 $Comp
-L Device:LED_Small D1
-U 1 1 6129367E
-P 3300 1300
-F 0 "D1" V 3346 1232 50  0000 R CNN
-F 1 "PWR" V 3255 1232 50  0000 R CNN
-F 2 "LED_SMD:LED_0201_0603Metric" V 3300 1300 50  0001 C CNN
-F 3 "~" V 3300 1300 50  0001 C CNN
-	1    3300 1300
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R_Small R1
+L Device:R_Small R3
 U 1 1 61294A5B
-P 3300 1050
-F 0 "R1" H 3241 1004 50  0000 R CNN
-F 1 "1k" H 3241 1095 50  0000 R CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 3300 1050 50  0001 C CNN
-F 3 "~" H 3300 1050 50  0001 C CNN
-	1    3300 1050
+P 2550 1000
+F 0 "R3" H 2491 954 50  0000 R CNN
+F 1 "1k" H 2491 1045 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 2550 1000 50  0001 C CNN
+F 3 "~" H 2550 1000 50  0001 C CNN
+	1    2550 1000
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	3300 850  3300 950 
+	2550 800  2550 900 
 Wire Wire Line
-	3300 1200 3300 1150
-$Comp
-L SamacSys_Parts:TYPE-C-31-M-17 J1
-U 1 1 612CE731
-P 9650 1200
-F 0 "J1" H 10300 1465 50  0000 C CNN
-F 1 "TYPE-C-31-M-17" H 10300 1374 50  0000 C CNN
-F 2 "SamacSys_Parts:TYPEC31M17" H 10800 1300 50  0001 L CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/1903211732_Korean-Hroparts-Elec-TYPE-C-31-M-17_C283540.pdf" H 10800 1200 50  0001 L CNN
-F 4 "USB Connectors 6 Receptacle 1 RoHS" H 10800 1100 50  0001 L CNN "Description"
-F 5 "3.26" H 10800 1000 50  0001 L CNN "Height"
-F 6 "" H 10800 900 50  0001 L CNN "Mouser Part Number"
-F 7 "" H 10800 800 50  0001 L CNN "Mouser Price/Stock"
-F 8 "Korean Hroparts Elec" H 10800 700 50  0001 L CNN "Manufacturer_Name"
-F 9 "TYPE-C-31-M-17" H 10800 600 50  0001 L CNN "Manufacturer_Part_Number"
-	1    9650 1200
-	1    0    0    -1  
-$EndComp
+	2550 1150 2550 1100
 Wire Wire Line
 	2400 2900 3200 2900
 Wire Wire Line
@@ -740,10 +701,10 @@ Wire Wire Line
 Wire Wire Line
 	2200 3050 2000 3050
 $Comp
-L power:GND #PWR?
+L power:GND #PWR012
 U 1 1 612FA43D
 P 2950 3050
-F 0 "#PWR?" H 2950 2800 50  0001 C CNN
+F 0 "#PWR012" H 2950 2800 50  0001 C CNN
 F 1 "GND" H 2950 3100 50  0000 C CNN
 F 2 "" H 2950 3050 50  0001 C CNN
 F 3 "" H 2950 3050 50  0001 C CNN
@@ -752,4 +713,4338 @@ F 3 "" H 2950 3050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2600 3050 2950 3050
+Wire Wire Line
+	2350 4250 2550 4250
+Connection ~ 2550 4250
+Wire Wire Line
+	3250 4250 3250 4050
+Wire Wire Line
+	3250 4050 3500 4050
+Wire Wire Line
+	1800 3700 2550 3700
+Wire Wire Line
+	2550 3700 2550 4250
+$Comp
+L power:+5V #PWR06
+U 1 1 61204AE1
+P 2200 3950
+F 0 "#PWR06" H 2200 3800 50  0001 C CNN
+F 1 "+5V" H 2215 4123 50  0000 C CNN
+F 2 "" H 2200 3950 50  0001 C CNN
+F 3 "" H 2200 3950 50  0001 C CNN
+	1    2200 3950
+	1    0    0    -1  
+$EndComp
+Text Label 850  4500 0    50   ~ 0
+VBUS
+$Comp
+L power:GND #PWR02
+U 1 1 6121D444
+P 1500 4100
+F 0 "#PWR02" H 1500 3850 50  0001 C CNN
+F 1 "GND" H 1505 3927 50  0000 C CNN
+F 2 "" H 1500 4100 50  0001 C CNN
+F 3 "" H 1500 4100 50  0001 C CNN
+	1    1500 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 4000 1500 4100
+$Comp
+L Regulator_Linear:MCP1825S U1
+U 1 1 611DA996
+P 1500 3700
+F 0 "U1" H 1500 3942 50  0000 C CNN
+F 1 "MCP1825S" H 1500 3851 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 1400 3850 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/devicedoc/22056b.pdf" H 1500 3950 50  0001 C CNN
+	1    1500 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_3_Bridged12 JP1
+U 1 1 61260AF0
+P 2200 4250
+F 0 "JP1" V 2154 4318 50  0000 L CNN
+F 1 "5" V 2245 4318 50  0000 L CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged12_Pad1.0x1.5mm_NumberLabels" H 2200 4250 50  0001 C CNN
+F 3 "~" H 2200 4250 50  0001 C CNN
+	1    2200 4250
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	2200 3950 2200 4050
+Wire Wire Line
+	2200 4450 2200 4500
+Wire Wire Line
+	850  4500 1150 4500
+Wire Wire Line
+	1200 3700 1150 3700
+Wire Wire Line
+	1150 3700 1150 4500
+Connection ~ 1150 4500
+Wire Wire Line
+	1150 4500 2200 4500
+Wire Wire Line
+	7950 1550 8150 1550
+Wire Wire Line
+	8150 1550 8150 1600
+Wire Wire Line
+	8150 1650 7950 1650
+Wire Wire Line
+	8250 1600 8150 1600
+Connection ~ 8150 1600
+Wire Wire Line
+	8150 1600 8150 1650
+Text GLabel 8250 1600 2    50   Input ~ 0
+D+
+Wire Wire Line
+	7950 1350 8150 1350
+Wire Wire Line
+	8150 1350 8150 1400
+Wire Wire Line
+	8150 1450 7950 1450
+Text GLabel 8250 1400 2    50   Input ~ 0
+D-
+Wire Wire Line
+	8150 1400 8250 1400
+Connection ~ 8150 1400
+Wire Wire Line
+	8150 1400 8150 1450
+$Comp
+L Device:R_Small R5
+U 1 1 6135DA03
+P 8700 1350
+F 0 "R5" H 8759 1396 50  0000 L CNN
+F 1 "5.1k" H 8759 1305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 8700 1350 50  0001 C CNN
+F 3 "~" H 8700 1350 50  0001 C CNN
+	1    8700 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R6
+U 1 1 6135E1E4
+P 9000 1350
+F 0 "R6" H 9059 1396 50  0000 L CNN
+F 1 "5.1k" H 9059 1305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 9000 1350 50  0001 C CNN
+F 3 "~" H 9000 1350 50  0001 C CNN
+	1    9000 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 1250 8700 1150
+Wire Wire Line
+	8700 1150 7950 1150
+Wire Wire Line
+	7950 1050 9000 1050
+Wire Wire Line
+	9000 1050 9000 1250
+$Comp
+L power:GND #PWR019
+U 1 1 6136C4C1
+P 8850 1650
+F 0 "#PWR019" H 8850 1400 50  0001 C CNN
+F 1 "GND" H 8855 1477 50  0000 C CNN
+F 2 "" H 8850 1650 50  0001 C CNN
+F 3 "" H 8850 1650 50  0001 C CNN
+	1    8850 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 1450 8700 1550
+Wire Wire Line
+	8700 1550 8850 1550
+Wire Wire Line
+	9000 1550 9000 1450
+Wire Wire Line
+	8850 1550 8850 1650
+Connection ~ 8850 1550
+Wire Wire Line
+	8850 1550 9000 1550
+Wire Wire Line
+	7050 2350 7050 2450
+Wire Wire Line
+	7050 2450 7200 2450
+Wire Wire Line
+	7350 2450 7350 2350
+$Comp
+L power:GND #PWR018
+U 1 1 61381615
+P 7200 2650
+F 0 "#PWR018" H 7200 2400 50  0001 C CNN
+F 1 "GND" H 7205 2477 50  0000 C CNN
+F 2 "" H 7200 2650 50  0001 C CNN
+F 3 "" H 7200 2650 50  0001 C CNN
+	1    7200 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 2650 7200 2450
+Connection ~ 7200 2450
+Wire Wire Line
+	7200 2450 7350 2450
+$Comp
+L Connector:USB_C_Receptacle_USB2.0 J7
+U 1 1 611E9250
+P 7350 1450
+F 0 "J7" H 7457 2317 50  0000 C CNN
+F 1 "USB_C_Receptacle_USB2.0" H 7457 2226 50  0000 C CNN
+F 2 "Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12" H 7500 1450 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 7500 1450 50  0001 C CNN
+	1    7350 1450
+	1    0    0    -1  
+$EndComp
+NoConn ~ 7950 1950
+NoConn ~ 7950 2050
+$Comp
+L Device:Polyfuse_Small F1
+U 1 1 61240266
+P 8200 850
+F 0 "F1" V 7995 850 50  0000 C CNN
+F 1 "500mA" V 8086 850 50  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric" H 8250 650 50  0001 L CNN
+F 3 "~" H 8200 850 50  0001 C CNN
+	1    8200 850 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7950 850  8100 850 
+Text Label 8650 850  2    50   ~ 0
+VBUS
+Wire Wire Line
+	8300 850  8650 850 
+$Comp
+L Connector_Generic:Conn_01x08 J1
+U 1 1 612ED7CB
+P 1250 6650
+F 0 "J1" V 1122 6162 50  0000 R CNN
+F 1 "Conn_01x08" V 1213 6162 50  0000 R CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x08_P1.00mm_Vertical" H 1250 6650 50  0001 C CNN
+F 3 "~" H 1250 6650 50  0001 C CNN
+	1    1250 6650
+	0    -1   1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x08 J4
+U 1 1 612F5A69
+P 2600 8150
+F 0 "J4" V 2472 7662 50  0000 R CNN
+F 1 "Conn_01x08" V 2563 7662 50  0000 R CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x08_P1.00mm_Vertical" H 2600 8150 50  0001 C CNN
+F 3 "~" H 2600 8150 50  0001 C CNN
+	1    2600 8150
+	0    -1   1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x08 J5
+U 1 1 612F631A
+P 2650 6650
+F 0 "J5" V 2522 6162 50  0000 R CNN
+F 1 "Conn_01x08" V 2613 6162 50  0000 R CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x08_P1.00mm_Vertical" H 2650 6650 50  0001 C CNN
+F 3 "~" H 2650 6650 50  0001 C CNN
+	1    2650 6650
+	0    -1   1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x08 J3
+U 1 1 612F6BC4
+P 1250 8150
+F 0 "J3" V 1122 7662 50  0000 R CNN
+F 1 "Conn_01x08" V 1213 7662 50  0000 R CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x08_P1.00mm_Vertical" H 1250 8150 50  0001 C CNN
+F 3 "~" H 1250 8150 50  0001 C CNN
+	1    1250 8150
+	0    -1   1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x08 J2
+U 1 1 612F7D82
+P 1250 7250
+F 0 "J2" V 1122 6762 50  0000 R CNN
+F 1 "Conn_01x08" V 1213 6762 50  0000 R CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x08_P1.00mm_Vertical" H 1250 7250 50  0001 C CNN
+F 3 "~" H 1250 7250 50  0001 C CNN
+	1    1250 7250
+	0    -1   1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x08 J6
+U 1 1 612F84F6
+P 2650 7250
+F 0 "J6" V 2522 6762 50  0000 R CNN
+F 1 "Conn_01x08" V 2613 6762 50  0000 R CNN
+F 2 "Connector_PinHeader_1.00mm:PinHeader_1x08_P1.00mm_Vertical" H 2650 7250 50  0001 C CNN
+F 3 "~" H 2650 7250 50  0001 C CNN
+	1    2650 7250
+	0    -1   1    0   
+$EndComp
+Text Label 950  6300 3    50   ~ 0
+A0
+Wire Wire Line
+	950  6300 950  6450
+Text Label 1050 6300 3    50   ~ 0
+A1
+Wire Wire Line
+	1050 6300 1050 6450
+Text Label 1150 6300 3    50   ~ 0
+A2
+Wire Wire Line
+	1150 6300 1150 6450
+Text Label 1250 6300 3    50   ~ 0
+A3
+Wire Wire Line
+	1250 6300 1250 6450
+Text Label 1350 6300 3    50   ~ 0
+A4
+Wire Wire Line
+	1350 6300 1350 6450
+Text Label 1450 6300 3    50   ~ 0
+A5
+Wire Wire Line
+	1450 6300 1450 6450
+Text Label 1550 6300 3    50   ~ 0
+A6
+Wire Wire Line
+	1550 6300 1550 6450
+Text Label 1650 6300 3    50   ~ 0
+A7
+Wire Wire Line
+	1650 6300 1650 6450
+Text Label 2300 7800 3    50   ~ 0
+F0
+Wire Wire Line
+	2300 7800 2300 7950
+Text Label 2400 7800 3    50   ~ 0
+F1
+Wire Wire Line
+	2400 7800 2400 7950
+Text Label 2500 7800 3    50   ~ 0
+F2
+Wire Wire Line
+	2500 7800 2500 7950
+Text Label 2600 7800 3    50   ~ 0
+F3
+Wire Wire Line
+	2600 7800 2600 7950
+Text Label 2700 7800 3    50   ~ 0
+F4
+Wire Wire Line
+	2700 7800 2700 7950
+Text Label 2800 7800 3    50   ~ 0
+F5
+Wire Wire Line
+	2800 7800 2800 7950
+Text Label 2900 7800 3    50   ~ 0
+F6
+Wire Wire Line
+	2900 7800 2900 7950
+Text Label 3000 7800 3    50   ~ 0
+F7
+Wire Wire Line
+	3000 7800 3000 7950
+Text Label 2350 6300 3    50   ~ 0
+B0
+Wire Wire Line
+	2350 6300 2350 6450
+Text Label 2450 6300 3    50   ~ 0
+B1
+Wire Wire Line
+	2450 6300 2450 6450
+Text Label 2550 6300 3    50   ~ 0
+B2
+Wire Wire Line
+	2550 6300 2550 6450
+Text Label 2650 6300 3    50   ~ 0
+B3
+Wire Wire Line
+	2650 6300 2650 6450
+Text Label 2750 6300 3    50   ~ 0
+B4
+Wire Wire Line
+	2750 6300 2750 6450
+Text Label 2850 6300 3    50   ~ 0
+B5
+Wire Wire Line
+	2850 6300 2850 6450
+Text Label 2950 6300 3    50   ~ 0
+B6
+Wire Wire Line
+	2950 6300 2950 6450
+Text Label 3050 6300 3    50   ~ 0
+B7
+Wire Wire Line
+	3050 6300 3050 6450
+Text Label 950  7800 3    50   ~ 0
+E0
+Wire Wire Line
+	950  7800 950  7950
+Text Label 1050 7800 3    50   ~ 0
+E1
+Wire Wire Line
+	1050 7800 1050 7950
+Text Label 1150 7800 3    50   ~ 0
+E2
+Wire Wire Line
+	1150 7800 1150 7950
+Text Label 1250 7800 3    50   ~ 0
+E3
+Wire Wire Line
+	1250 7800 1250 7950
+Text Label 1350 7800 3    50   ~ 0
+E4
+Wire Wire Line
+	1350 7800 1350 7950
+Text Label 1450 7800 3    50   ~ 0
+E5
+Wire Wire Line
+	1450 7800 1450 7950
+Text Label 1550 7800 3    50   ~ 0
+E6
+Wire Wire Line
+	1550 7800 1550 7950
+Text Label 1650 7800 3    50   ~ 0
+E7
+Wire Wire Line
+	1650 7800 1650 7950
+Text Label 950  6900 3    50   ~ 0
+C0
+Wire Wire Line
+	950  6900 950  7050
+Text Label 1050 6900 3    50   ~ 0
+C1
+Wire Wire Line
+	1050 6900 1050 7050
+Text Label 1150 6900 3    50   ~ 0
+C2
+Wire Wire Line
+	1150 6900 1150 7050
+Text Label 1250 6900 3    50   ~ 0
+C3
+Wire Wire Line
+	1250 6900 1250 7050
+Text Label 1350 6900 3    50   ~ 0
+C4
+Wire Wire Line
+	1350 6900 1350 7050
+Text Label 1450 6900 3    50   ~ 0
+C5
+Wire Wire Line
+	1450 6900 1450 7050
+Text Label 1550 6900 3    50   ~ 0
+C6
+Wire Wire Line
+	1550 6900 1550 7050
+Text Label 1650 6900 3    50   ~ 0
+C7
+Wire Wire Line
+	1650 6900 1650 7050
+Text Label 2350 6900 3    50   ~ 0
+D0
+Wire Wire Line
+	2350 6900 2350 7050
+Text Label 2450 6900 3    50   ~ 0
+D1
+Wire Wire Line
+	2450 6900 2450 7050
+Text Label 2550 6900 3    50   ~ 0
+D2
+Wire Wire Line
+	2550 6900 2550 7050
+Text Label 2650 6900 3    50   ~ 0
+D3
+Wire Wire Line
+	2650 6900 2650 7050
+Text Label 2750 6900 3    50   ~ 0
+D4
+Wire Wire Line
+	2750 6900 2750 7050
+Text Label 2850 6900 3    50   ~ 0
+D5
+Wire Wire Line
+	2850 6900 2850 7050
+Text Label 2950 6900 3    50   ~ 0
+D6
+Wire Wire Line
+	2950 6900 2950 7050
+Text Label 3050 6900 3    50   ~ 0
+D7
+Wire Wire Line
+	3050 6900 3050 7050
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX1
+U 1 1 61388361
+P 6200 3550
+F 0 "MX1" H 6233 3773 60  0000 C CNN
+F 1 "MX-NoLED" H 6233 3699 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 5575 3525 60  0001 C CNN
+F 3 "" H 5575 3525 60  0001 C CNN
+	1    6200 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 3800 6100 3750
+Wire Wire Line
+	6100 3750 6150 3750
+Wire Wire Line
+	6150 3750 6150 3700
+$Comp
+L Device:D_Small D1
+U 1 1 614B8E48
+P 6100 3900
+F 0 "D1" H 5950 4000 50  0000 R CNN
+F 1 "SOD-123" H 6350 4000 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 6100 3900 50  0001 C CNN
+F 3 "~" V 6100 3900 50  0001 C CNN
+	1    6100 3900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX2
+U 1 1 61652570
+P 6200 4450
+F 0 "MX2" H 6233 4673 60  0000 C CNN
+F 1 "MX-NoLED" H 6233 4599 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 5575 4425 60  0001 C CNN
+F 3 "" H 5575 4425 60  0001 C CNN
+	1    6200 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 4700 6100 4650
+Wire Wire Line
+	6100 4650 6150 4650
+Wire Wire Line
+	6150 4650 6150 4600
+$Comp
+L Device:D_Small D2
+U 1 1 616525D9
+P 6100 4800
+F 0 "D2" H 5950 4900 50  0000 R CNN
+F 1 "SOD-123" H 6350 4900 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 6100 4800 50  0001 C CNN
+F 3 "~" V 6100 4800 50  0001 C CNN
+	1    6100 4800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX3
+U 1 1 616936AB
+P 6200 5350
+F 0 "MX3" H 6233 5573 60  0000 C CNN
+F 1 "MX-NoLED" H 6233 5499 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 5575 5325 60  0001 C CNN
+F 3 "" H 5575 5325 60  0001 C CNN
+	1    6200 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 5600 6100 5550
+Wire Wire Line
+	6100 5550 6150 5550
+Wire Wire Line
+	6150 5550 6150 5500
+$Comp
+L Device:D_Small D3
+U 1 1 61693714
+P 6100 5700
+F 0 "D3" H 5950 5800 50  0000 R CNN
+F 1 "SOD-123" H 6350 5800 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 6100 5700 50  0001 C CNN
+F 3 "~" V 6100 5700 50  0001 C CNN
+	1    6100 5700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX4
+U 1 1 616D993C
+P 6200 6250
+F 0 "MX4" H 6233 6473 60  0000 C CNN
+F 1 "MX-NoLED" H 6233 6399 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 5575 6225 60  0001 C CNN
+F 3 "" H 5575 6225 60  0001 C CNN
+	1    6200 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 6500 6100 6450
+Wire Wire Line
+	6100 6450 6150 6450
+Wire Wire Line
+	6150 6450 6150 6400
+$Comp
+L Device:D_Small D4
+U 1 1 616D99A5
+P 6100 6600
+F 0 "D4" H 5950 6700 50  0000 R CNN
+F 1 "SOD-123" H 6350 6700 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 6100 6600 50  0001 C CNN
+F 3 "~" V 6100 6600 50  0001 C CNN
+	1    6100 6600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX5
+U 1 1 61724157
+P 6200 7150
+F 0 "MX5" H 6233 7373 60  0000 C CNN
+F 1 "MX-NoLED" H 6233 7299 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 5575 7125 60  0001 C CNN
+F 3 "" H 5575 7125 60  0001 C CNN
+	1    6200 7150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 7400 6100 7350
+Wire Wire Line
+	6100 7350 6150 7350
+Wire Wire Line
+	6150 7350 6150 7300
+$Comp
+L Device:D_Small D5
+U 1 1 617241C0
+P 6100 7500
+F 0 "D5" H 5950 7600 50  0000 R CNN
+F 1 "SOD-123" H 6350 7600 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 6100 7500 50  0001 C CNN
+F 3 "~" V 6100 7500 50  0001 C CNN
+	1    6100 7500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX6
+U 1 1 617A62A6
+P 6200 8050
+F 0 "MX6" H 6233 8273 60  0000 C CNN
+F 1 "MX-NoLED" H 6233 8199 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 5575 8025 60  0001 C CNN
+F 3 "" H 5575 8025 60  0001 C CNN
+	1    6200 8050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 8300 6100 8250
+Wire Wire Line
+	6100 8250 6150 8250
+Wire Wire Line
+	6150 8250 6150 8200
+$Comp
+L Device:D_Small D6
+U 1 1 617A630F
+P 6100 8400
+F 0 "D6" H 5950 8500 50  0000 R CNN
+F 1 "SOD-123" H 6350 8500 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 6100 8400 50  0001 C CNN
+F 3 "~" V 6100 8400 50  0001 C CNN
+	1    6100 8400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7950 8000 7850 8000
+Wire Wire Line
+	7950 3500 7950 8000
+Wire Wire Line
+	7850 3500 7950 3500
+Wire Wire Line
+	7450 7100 7450 6200
+Connection ~ 7450 7100
+Wire Wire Line
+	7400 7100 7450 7100
+Wire Wire Line
+	7450 6200 7450 5300
+Connection ~ 7450 6200
+Wire Wire Line
+	7400 6200 7450 6200
+Wire Wire Line
+	7450 5300 7450 4400
+Connection ~ 7450 5300
+Wire Wire Line
+	7400 5300 7450 5300
+Wire Wire Line
+	7450 4400 7450 3500
+Connection ~ 7450 4400
+Wire Wire Line
+	7400 4400 7450 4400
+Wire Wire Line
+	7450 3500 7400 3500
+Wire Wire Line
+	7450 8000 7450 7100
+Wire Wire Line
+	7400 8000 7450 8000
+Wire Wire Line
+	7000 7100 7000 6200
+Connection ~ 7000 7100
+Wire Wire Line
+	6900 7100 7000 7100
+Wire Wire Line
+	7000 6200 7000 5300
+Connection ~ 7000 6200
+Wire Wire Line
+	6900 6200 7000 6200
+Wire Wire Line
+	7000 5300 7000 4400
+Connection ~ 7000 5300
+Wire Wire Line
+	6900 5300 7000 5300
+Wire Wire Line
+	7000 4400 7000 3500
+Connection ~ 7000 4400
+Wire Wire Line
+	6900 4400 7000 4400
+Wire Wire Line
+	7000 3500 6900 3500
+Wire Wire Line
+	7000 8000 7000 7100
+Wire Wire Line
+	6900 8000 7000 8000
+Wire Wire Line
+	7650 8250 7650 8200
+Wire Wire Line
+	7600 8250 7650 8250
+Wire Wire Line
+	7600 8300 7600 8250
+$Comp
+L Device:D_Small D24
+U 1 1 617A6327
+P 7600 8400
+F 0 "D24" H 7450 8500 50  0000 R CNN
+F 1 "SOD-123" H 7850 8500 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 7600 8400 50  0001 C CNN
+F 3 "~" V 7600 8400 50  0001 C CNN
+	1    7600 8400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7200 8250 7200 8200
+Wire Wire Line
+	7150 8250 7200 8250
+Wire Wire Line
+	7150 8300 7150 8250
+$Comp
+L Device:D_Small D18
+U 1 1 617A631E
+P 7150 8400
+F 0 "D18" H 7000 8500 50  0000 R CNN
+F 1 "SOD-123" H 7400 8500 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 7150 8400 50  0001 C CNN
+F 3 "~" V 7150 8400 50  0001 C CNN
+	1    7150 8400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6700 8250 6700 8200
+Wire Wire Line
+	6650 8250 6700 8250
+Wire Wire Line
+	6650 8300 6650 8250
+$Comp
+L Device:D_Small D12
+U 1 1 617A6315
+P 6650 8400
+F 0 "D12" H 6500 8500 50  0000 R CNN
+F 1 "SOD-123" H 6900 8500 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 6650 8400 50  0001 C CNN
+F 3 "~" V 6650 8400 50  0001 C CNN
+	1    6650 8400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX24
+U 1 1 617A62B8
+P 7700 8050
+F 0 "MX24" H 7733 8273 60  0000 C CNN
+F 1 "MX-NoLED" H 7733 8199 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 7075 8025 60  0001 C CNN
+F 3 "" H 7075 8025 60  0001 C CNN
+	1    7700 8050
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX18
+U 1 1 617A62B2
+P 7250 8050
+F 0 "MX18" H 7283 8273 60  0000 C CNN
+F 1 "MX-NoLED" H 7283 8199 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 6625 8025 60  0001 C CNN
+F 3 "" H 6625 8025 60  0001 C CNN
+	1    7250 8050
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX12
+U 1 1 617A62AC
+P 6750 8050
+F 0 "MX12" H 6783 8273 60  0000 C CNN
+F 1 "MX-NoLED" H 6783 8199 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 6125 8025 60  0001 C CNN
+F 3 "" H 6125 8025 60  0001 C CNN
+	1    6750 8050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 7350 7650 7300
+Wire Wire Line
+	7600 7350 7650 7350
+Wire Wire Line
+	7600 7400 7600 7350
+$Comp
+L Device:D_Small D23
+U 1 1 617241D8
+P 7600 7500
+F 0 "D23" H 7450 7600 50  0000 R CNN
+F 1 "SOD-123" H 7850 7600 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 7600 7500 50  0001 C CNN
+F 3 "~" V 7600 7500 50  0001 C CNN
+	1    7600 7500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7200 7350 7200 7300
+Wire Wire Line
+	7150 7350 7200 7350
+Wire Wire Line
+	7150 7400 7150 7350
+$Comp
+L Device:D_Small D17
+U 1 1 617241CF
+P 7150 7500
+F 0 "D17" H 7000 7600 50  0000 R CNN
+F 1 "SOD-123" H 7400 7600 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 7150 7500 50  0001 C CNN
+F 3 "~" V 7150 7500 50  0001 C CNN
+	1    7150 7500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6700 7350 6700 7300
+Wire Wire Line
+	6650 7350 6700 7350
+Wire Wire Line
+	6650 7400 6650 7350
+$Comp
+L Device:D_Small D11
+U 1 1 617241C6
+P 6650 7500
+F 0 "D11" H 6500 7600 50  0000 R CNN
+F 1 "SOD-123" H 6900 7600 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 6650 7500 50  0001 C CNN
+F 3 "~" V 6650 7500 50  0001 C CNN
+	1    6650 7500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX23
+U 1 1 61724169
+P 7700 7150
+F 0 "MX23" H 7733 7373 60  0000 C CNN
+F 1 "MX-NoLED" H 7733 7299 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 7075 7125 60  0001 C CNN
+F 3 "" H 7075 7125 60  0001 C CNN
+	1    7700 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX17
+U 1 1 61724163
+P 7250 7150
+F 0 "MX17" H 7283 7373 60  0000 C CNN
+F 1 "MX-NoLED" H 7283 7299 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 6625 7125 60  0001 C CNN
+F 3 "" H 6625 7125 60  0001 C CNN
+	1    7250 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX11
+U 1 1 6172415D
+P 6750 7150
+F 0 "MX11" H 6783 7373 60  0000 C CNN
+F 1 "MX-NoLED" H 6783 7299 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 6125 7125 60  0001 C CNN
+F 3 "" H 6125 7125 60  0001 C CNN
+	1    6750 7150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 6450 7650 6400
+Wire Wire Line
+	7600 6450 7650 6450
+Wire Wire Line
+	7600 6500 7600 6450
+$Comp
+L Device:D_Small D22
+U 1 1 616D99BD
+P 7600 6600
+F 0 "D22" H 7450 6700 50  0000 R CNN
+F 1 "SOD-123" H 7850 6700 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 7600 6600 50  0001 C CNN
+F 3 "~" V 7600 6600 50  0001 C CNN
+	1    7600 6600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7200 6450 7200 6400
+Wire Wire Line
+	7150 6450 7200 6450
+Wire Wire Line
+	7150 6500 7150 6450
+$Comp
+L Device:D_Small D16
+U 1 1 616D99B4
+P 7150 6600
+F 0 "D16" H 7000 6700 50  0000 R CNN
+F 1 "SOD-123" H 7400 6700 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 7150 6600 50  0001 C CNN
+F 3 "~" V 7150 6600 50  0001 C CNN
+	1    7150 6600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6700 6450 6700 6400
+Wire Wire Line
+	6650 6450 6700 6450
+Wire Wire Line
+	6650 6500 6650 6450
+$Comp
+L Device:D_Small D10
+U 1 1 616D99AB
+P 6650 6600
+F 0 "D10" H 6500 6700 50  0000 R CNN
+F 1 "SOD-123" H 6900 6700 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 6650 6600 50  0001 C CNN
+F 3 "~" V 6650 6600 50  0001 C CNN
+	1    6650 6600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX22
+U 1 1 616D994E
+P 7700 6250
+F 0 "MX22" H 7733 6473 60  0000 C CNN
+F 1 "MX-NoLED" H 7733 6399 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 7075 6225 60  0001 C CNN
+F 3 "" H 7075 6225 60  0001 C CNN
+	1    7700 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX16
+U 1 1 616D9948
+P 7250 6250
+F 0 "MX16" H 7283 6473 60  0000 C CNN
+F 1 "MX-NoLED" H 7283 6399 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 6625 6225 60  0001 C CNN
+F 3 "" H 6625 6225 60  0001 C CNN
+	1    7250 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX10
+U 1 1 616D9942
+P 6750 6250
+F 0 "MX10" H 6783 6473 60  0000 C CNN
+F 1 "MX-NoLED" H 6783 6399 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 6125 6225 60  0001 C CNN
+F 3 "" H 6125 6225 60  0001 C CNN
+	1    6750 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 5550 7650 5500
+Wire Wire Line
+	7600 5550 7650 5550
+Wire Wire Line
+	7600 5600 7600 5550
+$Comp
+L Device:D_Small D21
+U 1 1 6169372C
+P 7600 5700
+F 0 "D21" H 7450 5800 50  0000 R CNN
+F 1 "SOD-123" H 7850 5800 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 7600 5700 50  0001 C CNN
+F 3 "~" V 7600 5700 50  0001 C CNN
+	1    7600 5700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7200 5550 7200 5500
+Wire Wire Line
+	7150 5550 7200 5550
+Wire Wire Line
+	7150 5600 7150 5550
+$Comp
+L Device:D_Small D15
+U 1 1 61693723
+P 7150 5700
+F 0 "D15" H 7000 5800 50  0000 R CNN
+F 1 "SOD-123" H 7400 5800 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 7150 5700 50  0001 C CNN
+F 3 "~" V 7150 5700 50  0001 C CNN
+	1    7150 5700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6700 5550 6700 5500
+Wire Wire Line
+	6650 5550 6700 5550
+Wire Wire Line
+	6650 5600 6650 5550
+$Comp
+L Device:D_Small D9
+U 1 1 6169371A
+P 6650 5700
+F 0 "D9" H 6500 5800 50  0000 R CNN
+F 1 "SOD-123" H 6900 5800 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 6650 5700 50  0001 C CNN
+F 3 "~" V 6650 5700 50  0001 C CNN
+	1    6650 5700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX21
+U 1 1 616936BD
+P 7700 5350
+F 0 "MX21" H 7733 5573 60  0000 C CNN
+F 1 "MX-NoLED" H 7733 5499 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 7075 5325 60  0001 C CNN
+F 3 "" H 7075 5325 60  0001 C CNN
+	1    7700 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX15
+U 1 1 616936B7
+P 7250 5350
+F 0 "MX15" H 7283 5573 60  0000 C CNN
+F 1 "MX-NoLED" H 7283 5499 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 6625 5325 60  0001 C CNN
+F 3 "" H 6625 5325 60  0001 C CNN
+	1    7250 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX9
+U 1 1 616936B1
+P 6750 5350
+F 0 "MX9" H 6783 5573 60  0000 C CNN
+F 1 "MX-NoLED" H 6783 5499 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 6125 5325 60  0001 C CNN
+F 3 "" H 6125 5325 60  0001 C CNN
+	1    6750 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 4650 7650 4600
+Wire Wire Line
+	7600 4650 7650 4650
+Wire Wire Line
+	7600 4700 7600 4650
+$Comp
+L Device:D_Small D20
+U 1 1 616525F1
+P 7600 4800
+F 0 "D20" H 7450 4900 50  0000 R CNN
+F 1 "SOD-123" H 7850 4900 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 7600 4800 50  0001 C CNN
+F 3 "~" V 7600 4800 50  0001 C CNN
+	1    7600 4800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7200 4650 7200 4600
+Wire Wire Line
+	7150 4650 7200 4650
+Wire Wire Line
+	7150 4700 7150 4650
+$Comp
+L Device:D_Small D14
+U 1 1 616525E8
+P 7150 4800
+F 0 "D14" H 7000 4900 50  0000 R CNN
+F 1 "SOD-123" H 7400 4900 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 7150 4800 50  0001 C CNN
+F 3 "~" V 7150 4800 50  0001 C CNN
+	1    7150 4800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6700 4650 6700 4600
+Wire Wire Line
+	6650 4650 6700 4650
+Wire Wire Line
+	6650 4700 6650 4650
+$Comp
+L Device:D_Small D8
+U 1 1 616525DF
+P 6650 4800
+F 0 "D8" H 6500 4900 50  0000 R CNN
+F 1 "SOD-123" H 6900 4900 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 6650 4800 50  0001 C CNN
+F 3 "~" V 6650 4800 50  0001 C CNN
+	1    6650 4800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX20
+U 1 1 61652582
+P 7700 4450
+F 0 "MX20" H 7733 4673 60  0000 C CNN
+F 1 "MX-NoLED" H 7733 4599 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 7075 4425 60  0001 C CNN
+F 3 "" H 7075 4425 60  0001 C CNN
+	1    7700 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX14
+U 1 1 6165257C
+P 7250 4450
+F 0 "MX14" H 7283 4673 60  0000 C CNN
+F 1 "MX-NoLED" H 7283 4599 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 6625 4425 60  0001 C CNN
+F 3 "" H 6625 4425 60  0001 C CNN
+	1    7250 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX8
+U 1 1 61652576
+P 6750 4450
+F 0 "MX8" H 6783 4673 60  0000 C CNN
+F 1 "MX-NoLED" H 6783 4599 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 6125 4425 60  0001 C CNN
+F 3 "" H 6125 4425 60  0001 C CNN
+	1    6750 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 3750 7650 3700
+Wire Wire Line
+	7600 3750 7650 3750
+Wire Wire Line
+	7600 3800 7600 3750
+$Comp
+L Device:D_Small D19
+U 1 1 61508D67
+P 7600 3900
+F 0 "D19" H 7450 4000 50  0000 R CNN
+F 1 "SOD-123" H 7850 4000 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 7600 3900 50  0001 C CNN
+F 3 "~" V 7600 3900 50  0001 C CNN
+	1    7600 3900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7200 3750 7200 3700
+Wire Wire Line
+	7150 3750 7200 3750
+Wire Wire Line
+	7150 3800 7150 3750
+$Comp
+L Device:D_Small D13
+U 1 1 614FD19F
+P 7150 3900
+F 0 "D13" H 7000 4000 50  0000 R CNN
+F 1 "SOD-123" H 7400 4000 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 7150 3900 50  0001 C CNN
+F 3 "~" V 7150 3900 50  0001 C CNN
+	1    7150 3900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6700 3750 6700 3700
+Wire Wire Line
+	6650 3750 6700 3750
+Wire Wire Line
+	6650 3800 6650 3750
+$Comp
+L Device:D_Small D7
+U 1 1 614DB956
+P 6650 3900
+F 0 "D7" H 6500 4000 50  0000 R CNN
+F 1 "SOD-123" H 6900 4000 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 6650 3900 50  0001 C CNN
+F 3 "~" V 6650 3900 50  0001 C CNN
+	1    6650 3900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX19
+U 1 1 6138A9CC
+P 7700 3550
+F 0 "MX19" H 7733 3773 60  0000 C CNN
+F 1 "MX-NoLED" H 7733 3699 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 7075 3525 60  0001 C CNN
+F 3 "" H 7075 3525 60  0001 C CNN
+	1    7700 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX13
+U 1 1 6138A589
+P 7250 3550
+F 0 "MX13" H 7283 3773 60  0000 C CNN
+F 1 "MX-NoLED" H 7283 3699 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 6625 3525 60  0001 C CNN
+F 3 "" H 6625 3525 60  0001 C CNN
+	1    7250 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX7
+U 1 1 61389F48
+P 6750 3550
+F 0 "MX7" H 6783 3773 60  0000 C CNN
+F 1 "MX-NoLED" H 6783 3699 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 6125 3525 60  0001 C CNN
+F 3 "" H 6125 3525 60  0001 C CNN
+	1    6750 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 3500 6450 3500
+Wire Wire Line
+	6350 8000 6450 8000
+Wire Wire Line
+	6350 7100 6450 7100
+Connection ~ 6450 7100
+Wire Wire Line
+	6450 7100 6450 8000
+Wire Wire Line
+	6350 6200 6450 6200
+Connection ~ 6450 6200
+Wire Wire Line
+	6450 6200 6450 7100
+Wire Wire Line
+	6350 5300 6450 5300
+Connection ~ 6450 5300
+Wire Wire Line
+	6450 5300 6450 6200
+Wire Wire Line
+	6350 4400 6450 4400
+Wire Wire Line
+	6450 3500 6450 4400
+Connection ~ 6450 4400
+Wire Wire Line
+	6450 4400 6450 5300
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX25
+U 1 1 61F15554
+P 8200 3550
+F 0 "MX25" H 8233 3773 60  0000 C CNN
+F 1 "MX-NoLED" H 8233 3699 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 7575 3525 60  0001 C CNN
+F 3 "" H 7575 3525 60  0001 C CNN
+	1    8200 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 3800 8100 3750
+Wire Wire Line
+	8100 3750 8150 3750
+Wire Wire Line
+	8150 3750 8150 3700
+$Comp
+L Device:D_Small D25
+U 1 1 61F1555D
+P 8100 3900
+F 0 "D25" H 7950 4000 50  0000 R CNN
+F 1 "SOD-123" H 8350 4000 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 8100 3900 50  0001 C CNN
+F 3 "~" V 8100 3900 50  0001 C CNN
+	1    8100 3900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX26
+U 1 1 61F15563
+P 8200 4450
+F 0 "MX26" H 8233 4673 60  0000 C CNN
+F 1 "MX-NoLED" H 8233 4599 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 7575 4425 60  0001 C CNN
+F 3 "" H 7575 4425 60  0001 C CNN
+	1    8200 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 4700 8100 4650
+Wire Wire Line
+	8100 4650 8150 4650
+Wire Wire Line
+	8150 4650 8150 4600
+$Comp
+L Device:D_Small D26
+U 1 1 61F1556C
+P 8100 4800
+F 0 "D26" H 7950 4900 50  0000 R CNN
+F 1 "SOD-123" H 8350 4900 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 8100 4800 50  0001 C CNN
+F 3 "~" V 8100 4800 50  0001 C CNN
+	1    8100 4800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX27
+U 1 1 61F15572
+P 8200 5350
+F 0 "MX27" H 8233 5573 60  0000 C CNN
+F 1 "MX-NoLED" H 8233 5499 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 7575 5325 60  0001 C CNN
+F 3 "" H 7575 5325 60  0001 C CNN
+	1    8200 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 5600 8100 5550
+Wire Wire Line
+	8100 5550 8150 5550
+Wire Wire Line
+	8150 5550 8150 5500
+$Comp
+L Device:D_Small D27
+U 1 1 61F1557B
+P 8100 5700
+F 0 "D27" H 7950 5800 50  0000 R CNN
+F 1 "SOD-123" H 8350 5800 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 8100 5700 50  0001 C CNN
+F 3 "~" V 8100 5700 50  0001 C CNN
+	1    8100 5700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX28
+U 1 1 61F15581
+P 8200 6250
+F 0 "MX28" H 8233 6473 60  0000 C CNN
+F 1 "MX-NoLED" H 8233 6399 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 7575 6225 60  0001 C CNN
+F 3 "" H 7575 6225 60  0001 C CNN
+	1    8200 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 6500 8100 6450
+Wire Wire Line
+	8100 6450 8150 6450
+Wire Wire Line
+	8150 6450 8150 6400
+$Comp
+L Device:D_Small D28
+U 1 1 61F1558A
+P 8100 6600
+F 0 "D28" H 7950 6700 50  0000 R CNN
+F 1 "SOD-123" H 8350 6700 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 8100 6600 50  0001 C CNN
+F 3 "~" V 8100 6600 50  0001 C CNN
+	1    8100 6600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX29
+U 1 1 61F15590
+P 8200 7150
+F 0 "MX29" H 8233 7373 60  0000 C CNN
+F 1 "MX-NoLED" H 8233 7299 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 7575 7125 60  0001 C CNN
+F 3 "" H 7575 7125 60  0001 C CNN
+	1    8200 7150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 7400 8100 7350
+Wire Wire Line
+	8100 7350 8150 7350
+Wire Wire Line
+	8150 7350 8150 7300
+$Comp
+L Device:D_Small D29
+U 1 1 61F15599
+P 8100 7500
+F 0 "D29" H 7950 7600 50  0000 R CNN
+F 1 "SOD-123" H 8350 7600 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 8100 7500 50  0001 C CNN
+F 3 "~" V 8100 7500 50  0001 C CNN
+	1    8100 7500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX30
+U 1 1 61F1559F
+P 8200 8050
+F 0 "MX30" H 8233 8273 60  0000 C CNN
+F 1 "MX-NoLED" H 8233 8199 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 7575 8025 60  0001 C CNN
+F 3 "" H 7575 8025 60  0001 C CNN
+	1    8200 8050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 8300 8100 8250
+Wire Wire Line
+	8100 8250 8150 8250
+Wire Wire Line
+	8150 8250 8150 8200
+$Comp
+L Device:D_Small D30
+U 1 1 61F155A8
+P 8100 8400
+F 0 "D30" H 7950 8500 50  0000 R CNN
+F 1 "SOD-123" H 8350 8500 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 8100 8400 50  0001 C CNN
+F 3 "~" V 8100 8400 50  0001 C CNN
+	1    8100 8400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9950 8000 9850 8000
+Wire Wire Line
+	9950 3500 9950 8000
+Wire Wire Line
+	9850 3500 9950 3500
+Wire Wire Line
+	9450 7100 9450 6200
+Connection ~ 9450 7100
+Wire Wire Line
+	9400 7100 9450 7100
+Wire Wire Line
+	9450 6200 9450 5300
+Connection ~ 9450 6200
+Wire Wire Line
+	9400 6200 9450 6200
+Wire Wire Line
+	9450 5300 9450 4400
+Connection ~ 9450 5300
+Wire Wire Line
+	9400 5300 9450 5300
+Wire Wire Line
+	9450 4400 9450 3500
+Connection ~ 9450 4400
+Wire Wire Line
+	9400 4400 9450 4400
+Wire Wire Line
+	9450 3500 9400 3500
+Wire Wire Line
+	9450 8000 9450 7100
+Wire Wire Line
+	9400 8000 9450 8000
+Wire Wire Line
+	9000 7100 9000 6200
+Connection ~ 9000 7100
+Wire Wire Line
+	8900 7100 9000 7100
+Wire Wire Line
+	9000 6200 9000 5300
+Connection ~ 9000 6200
+Wire Wire Line
+	8900 6200 9000 6200
+Wire Wire Line
+	9000 5300 9000 4400
+Connection ~ 9000 5300
+Wire Wire Line
+	8900 5300 9000 5300
+Wire Wire Line
+	9000 4400 9000 3500
+Connection ~ 9000 4400
+Wire Wire Line
+	8900 4400 9000 4400
+Wire Wire Line
+	9000 3500 8900 3500
+Wire Wire Line
+	9000 8000 9000 7100
+Wire Wire Line
+	8900 8000 9000 8000
+Wire Wire Line
+	9650 8250 9650 8200
+Wire Wire Line
+	9600 8250 9650 8250
+Wire Wire Line
+	9600 8300 9600 8250
+$Comp
+L Device:D_Small D48
+U 1 1 61F155D2
+P 9600 8400
+F 0 "D48" H 9450 8500 50  0000 R CNN
+F 1 "SOD-123" H 9850 8500 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 9600 8400 50  0001 C CNN
+F 3 "~" V 9600 8400 50  0001 C CNN
+	1    9600 8400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9200 8250 9200 8200
+Wire Wire Line
+	9150 8250 9200 8250
+Wire Wire Line
+	9150 8300 9150 8250
+$Comp
+L Device:D_Small D42
+U 1 1 61F155DB
+P 9150 8400
+F 0 "D42" H 9000 8500 50  0000 R CNN
+F 1 "SOD-123" H 9400 8500 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 9150 8400 50  0001 C CNN
+F 3 "~" V 9150 8400 50  0001 C CNN
+	1    9150 8400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8700 8250 8700 8200
+Wire Wire Line
+	8650 8250 8700 8250
+Wire Wire Line
+	8650 8300 8650 8250
+$Comp
+L Device:D_Small D36
+U 1 1 61F155E4
+P 8650 8400
+F 0 "D36" H 8500 8500 50  0000 R CNN
+F 1 "SOD-123" H 8900 8500 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 8650 8400 50  0001 C CNN
+F 3 "~" V 8650 8400 50  0001 C CNN
+	1    8650 8400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX48
+U 1 1 61F155EA
+P 9700 8050
+F 0 "MX48" H 9733 8273 60  0000 C CNN
+F 1 "MX-NoLED" H 9733 8199 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 9075 8025 60  0001 C CNN
+F 3 "" H 9075 8025 60  0001 C CNN
+	1    9700 8050
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX42
+U 1 1 61F155F0
+P 9250 8050
+F 0 "MX42" H 9283 8273 60  0000 C CNN
+F 1 "MX-NoLED" H 9283 8199 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 8625 8025 60  0001 C CNN
+F 3 "" H 8625 8025 60  0001 C CNN
+	1    9250 8050
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX36
+U 1 1 61F155F6
+P 8750 8050
+F 0 "MX36" H 8783 8273 60  0000 C CNN
+F 1 "MX-NoLED" H 8783 8199 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 8125 8025 60  0001 C CNN
+F 3 "" H 8125 8025 60  0001 C CNN
+	1    8750 8050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 7350 9650 7300
+Wire Wire Line
+	9600 7350 9650 7350
+Wire Wire Line
+	9600 7400 9600 7350
+$Comp
+L Device:D_Small D47
+U 1 1 61F155FF
+P 9600 7500
+F 0 "D47" H 9450 7600 50  0000 R CNN
+F 1 "SOD-123" H 9850 7600 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 9600 7500 50  0001 C CNN
+F 3 "~" V 9600 7500 50  0001 C CNN
+	1    9600 7500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9200 7350 9200 7300
+Wire Wire Line
+	9150 7350 9200 7350
+Wire Wire Line
+	9150 7400 9150 7350
+$Comp
+L Device:D_Small D41
+U 1 1 61F15608
+P 9150 7500
+F 0 "D41" H 9000 7600 50  0000 R CNN
+F 1 "SOD-123" H 9400 7600 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 9150 7500 50  0001 C CNN
+F 3 "~" V 9150 7500 50  0001 C CNN
+	1    9150 7500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8700 7350 8700 7300
+Wire Wire Line
+	8650 7350 8700 7350
+Wire Wire Line
+	8650 7400 8650 7350
+$Comp
+L Device:D_Small D35
+U 1 1 61F15611
+P 8650 7500
+F 0 "D35" H 8500 7600 50  0000 R CNN
+F 1 "SOD-123" H 8900 7600 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 8650 7500 50  0001 C CNN
+F 3 "~" V 8650 7500 50  0001 C CNN
+	1    8650 7500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX47
+U 1 1 61F15617
+P 9700 7150
+F 0 "MX47" H 9733 7373 60  0000 C CNN
+F 1 "MX-NoLED" H 9733 7299 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 9075 7125 60  0001 C CNN
+F 3 "" H 9075 7125 60  0001 C CNN
+	1    9700 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX41
+U 1 1 61F1561D
+P 9250 7150
+F 0 "MX41" H 9283 7373 60  0000 C CNN
+F 1 "MX-NoLED" H 9283 7299 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 8625 7125 60  0001 C CNN
+F 3 "" H 8625 7125 60  0001 C CNN
+	1    9250 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX35
+U 1 1 61F15623
+P 8750 7150
+F 0 "MX35" H 8783 7373 60  0000 C CNN
+F 1 "MX-NoLED" H 8783 7299 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 8125 7125 60  0001 C CNN
+F 3 "" H 8125 7125 60  0001 C CNN
+	1    8750 7150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 6450 9650 6400
+Wire Wire Line
+	9600 6450 9650 6450
+Wire Wire Line
+	9600 6500 9600 6450
+$Comp
+L Device:D_Small D46
+U 1 1 61F1562C
+P 9600 6600
+F 0 "D46" H 9450 6700 50  0000 R CNN
+F 1 "SOD-123" H 9850 6700 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 9600 6600 50  0001 C CNN
+F 3 "~" V 9600 6600 50  0001 C CNN
+	1    9600 6600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9200 6450 9200 6400
+Wire Wire Line
+	9150 6450 9200 6450
+Wire Wire Line
+	9150 6500 9150 6450
+$Comp
+L Device:D_Small D40
+U 1 1 61F15635
+P 9150 6600
+F 0 "D40" H 9000 6700 50  0000 R CNN
+F 1 "SOD-123" H 9400 6700 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 9150 6600 50  0001 C CNN
+F 3 "~" V 9150 6600 50  0001 C CNN
+	1    9150 6600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8700 6450 8700 6400
+Wire Wire Line
+	8650 6450 8700 6450
+Wire Wire Line
+	8650 6500 8650 6450
+$Comp
+L Device:D_Small D34
+U 1 1 61F1563E
+P 8650 6600
+F 0 "D34" H 8500 6700 50  0000 R CNN
+F 1 "SOD-123" H 8900 6700 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 8650 6600 50  0001 C CNN
+F 3 "~" V 8650 6600 50  0001 C CNN
+	1    8650 6600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX46
+U 1 1 61F15644
+P 9700 6250
+F 0 "MX46" H 9733 6473 60  0000 C CNN
+F 1 "MX-NoLED" H 9733 6399 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 9075 6225 60  0001 C CNN
+F 3 "" H 9075 6225 60  0001 C CNN
+	1    9700 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX40
+U 1 1 61F1564A
+P 9250 6250
+F 0 "MX40" H 9283 6473 60  0000 C CNN
+F 1 "MX-NoLED" H 9283 6399 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 8625 6225 60  0001 C CNN
+F 3 "" H 8625 6225 60  0001 C CNN
+	1    9250 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX34
+U 1 1 61F15650
+P 8750 6250
+F 0 "MX34" H 8783 6473 60  0000 C CNN
+F 1 "MX-NoLED" H 8783 6399 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 8125 6225 60  0001 C CNN
+F 3 "" H 8125 6225 60  0001 C CNN
+	1    8750 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 5550 9650 5500
+Wire Wire Line
+	9600 5550 9650 5550
+Wire Wire Line
+	9600 5600 9600 5550
+$Comp
+L Device:D_Small D45
+U 1 1 61F15659
+P 9600 5700
+F 0 "D45" H 9450 5800 50  0000 R CNN
+F 1 "SOD-123" H 9850 5800 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 9600 5700 50  0001 C CNN
+F 3 "~" V 9600 5700 50  0001 C CNN
+	1    9600 5700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9200 5550 9200 5500
+Wire Wire Line
+	9150 5550 9200 5550
+Wire Wire Line
+	9150 5600 9150 5550
+$Comp
+L Device:D_Small D39
+U 1 1 61F15662
+P 9150 5700
+F 0 "D39" H 9000 5800 50  0000 R CNN
+F 1 "SOD-123" H 9400 5800 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 9150 5700 50  0001 C CNN
+F 3 "~" V 9150 5700 50  0001 C CNN
+	1    9150 5700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8700 5550 8700 5500
+Wire Wire Line
+	8650 5550 8700 5550
+Wire Wire Line
+	8650 5600 8650 5550
+$Comp
+L Device:D_Small D33
+U 1 1 61F1566B
+P 8650 5700
+F 0 "D33" H 8500 5800 50  0000 R CNN
+F 1 "SOD-123" H 8900 5800 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 8650 5700 50  0001 C CNN
+F 3 "~" V 8650 5700 50  0001 C CNN
+	1    8650 5700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX45
+U 1 1 61F15671
+P 9700 5350
+F 0 "MX45" H 9733 5573 60  0000 C CNN
+F 1 "MX-NoLED" H 9733 5499 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 9075 5325 60  0001 C CNN
+F 3 "" H 9075 5325 60  0001 C CNN
+	1    9700 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX39
+U 1 1 61F15677
+P 9250 5350
+F 0 "MX39" H 9283 5573 60  0000 C CNN
+F 1 "MX-NoLED" H 9283 5499 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 8625 5325 60  0001 C CNN
+F 3 "" H 8625 5325 60  0001 C CNN
+	1    9250 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX33
+U 1 1 61F1567D
+P 8750 5350
+F 0 "MX33" H 8783 5573 60  0000 C CNN
+F 1 "MX-NoLED" H 8783 5499 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 8125 5325 60  0001 C CNN
+F 3 "" H 8125 5325 60  0001 C CNN
+	1    8750 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 4650 9650 4600
+Wire Wire Line
+	9600 4650 9650 4650
+Wire Wire Line
+	9600 4700 9600 4650
+$Comp
+L Device:D_Small D44
+U 1 1 61F15686
+P 9600 4800
+F 0 "D44" H 9450 4900 50  0000 R CNN
+F 1 "SOD-123" H 9850 4900 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 9600 4800 50  0001 C CNN
+F 3 "~" V 9600 4800 50  0001 C CNN
+	1    9600 4800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9200 4650 9200 4600
+Wire Wire Line
+	9150 4650 9200 4650
+Wire Wire Line
+	9150 4700 9150 4650
+$Comp
+L Device:D_Small D38
+U 1 1 61F1568F
+P 9150 4800
+F 0 "D38" H 9000 4900 50  0000 R CNN
+F 1 "SOD-123" H 9400 4900 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 9150 4800 50  0001 C CNN
+F 3 "~" V 9150 4800 50  0001 C CNN
+	1    9150 4800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8700 4650 8700 4600
+Wire Wire Line
+	8650 4650 8700 4650
+Wire Wire Line
+	8650 4700 8650 4650
+$Comp
+L Device:D_Small D32
+U 1 1 61F15698
+P 8650 4800
+F 0 "D32" H 8500 4900 50  0000 R CNN
+F 1 "SOD-123" H 8900 4900 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 8650 4800 50  0001 C CNN
+F 3 "~" V 8650 4800 50  0001 C CNN
+	1    8650 4800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX44
+U 1 1 61F1569E
+P 9700 4450
+F 0 "MX44" H 9733 4673 60  0000 C CNN
+F 1 "MX-NoLED" H 9733 4599 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 9075 4425 60  0001 C CNN
+F 3 "" H 9075 4425 60  0001 C CNN
+	1    9700 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX38
+U 1 1 61F156A4
+P 9250 4450
+F 0 "MX38" H 9283 4673 60  0000 C CNN
+F 1 "MX-NoLED" H 9283 4599 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 8625 4425 60  0001 C CNN
+F 3 "" H 8625 4425 60  0001 C CNN
+	1    9250 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX32
+U 1 1 61F156AA
+P 8750 4450
+F 0 "MX32" H 8783 4673 60  0000 C CNN
+F 1 "MX-NoLED" H 8783 4599 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 8125 4425 60  0001 C CNN
+F 3 "" H 8125 4425 60  0001 C CNN
+	1    8750 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9650 3750 9650 3700
+Wire Wire Line
+	9600 3750 9650 3750
+Wire Wire Line
+	9600 3800 9600 3750
+$Comp
+L Device:D_Small D43
+U 1 1 61F156B3
+P 9600 3900
+F 0 "D43" H 9450 4000 50  0000 R CNN
+F 1 "SOD-123" H 9850 4000 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 9600 3900 50  0001 C CNN
+F 3 "~" V 9600 3900 50  0001 C CNN
+	1    9600 3900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9200 3750 9200 3700
+Wire Wire Line
+	9150 3750 9200 3750
+Wire Wire Line
+	9150 3800 9150 3750
+$Comp
+L Device:D_Small D37
+U 1 1 61F156BC
+P 9150 3900
+F 0 "D37" H 9000 4000 50  0000 R CNN
+F 1 "SOD-123" H 9400 4000 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 9150 3900 50  0001 C CNN
+F 3 "~" V 9150 3900 50  0001 C CNN
+	1    9150 3900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8700 3750 8700 3700
+Wire Wire Line
+	8650 3750 8700 3750
+Wire Wire Line
+	8650 3800 8650 3750
+$Comp
+L Device:D_Small D31
+U 1 1 61F156C5
+P 8650 3900
+F 0 "D31" H 8500 4000 50  0000 R CNN
+F 1 "SOD-123" H 8900 4000 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 8650 3900 50  0001 C CNN
+F 3 "~" V 8650 3900 50  0001 C CNN
+	1    8650 3900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX43
+U 1 1 61F156CB
+P 9700 3550
+F 0 "MX43" H 9733 3773 60  0000 C CNN
+F 1 "MX-NoLED" H 9733 3699 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 9075 3525 60  0001 C CNN
+F 3 "" H 9075 3525 60  0001 C CNN
+	1    9700 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX37
+U 1 1 61F156D1
+P 9250 3550
+F 0 "MX37" H 9283 3773 60  0000 C CNN
+F 1 "MX-NoLED" H 9283 3699 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 8625 3525 60  0001 C CNN
+F 3 "" H 8625 3525 60  0001 C CNN
+	1    9250 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX31
+U 1 1 61F156D7
+P 8750 3550
+F 0 "MX31" H 8783 3773 60  0000 C CNN
+F 1 "MX-NoLED" H 8783 3699 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 8125 3525 60  0001 C CNN
+F 3 "" H 8125 3525 60  0001 C CNN
+	1    8750 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8350 3500 8450 3500
+Wire Wire Line
+	8350 8000 8450 8000
+Wire Wire Line
+	8350 7100 8450 7100
+Connection ~ 8450 7100
+Wire Wire Line
+	8450 7100 8450 8000
+Wire Wire Line
+	8350 6200 8450 6200
+Connection ~ 8450 6200
+Wire Wire Line
+	8450 6200 8450 7100
+Wire Wire Line
+	8350 5300 8450 5300
+Connection ~ 8450 5300
+Wire Wire Line
+	8450 5300 8450 6200
+Wire Wire Line
+	8350 4400 8450 4400
+Wire Wire Line
+	8450 3500 8450 4400
+Connection ~ 8450 4400
+Wire Wire Line
+	8450 4400 8450 5300
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX49
+U 1 1 61F59AD7
+P 10200 3550
+F 0 "MX49" H 10233 3773 60  0000 C CNN
+F 1 "MX-NoLED" H 10233 3699 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 9575 3525 60  0001 C CNN
+F 3 "" H 9575 3525 60  0001 C CNN
+	1    10200 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10100 3800 10100 3750
+Wire Wire Line
+	10100 3750 10150 3750
+Wire Wire Line
+	10150 3750 10150 3700
+$Comp
+L Device:D_Small D49
+U 1 1 61F59AE0
+P 10100 3900
+F 0 "D49" H 9950 4000 50  0000 R CNN
+F 1 "SOD-123" H 10350 4000 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 10100 3900 50  0001 C CNN
+F 3 "~" V 10100 3900 50  0001 C CNN
+	1    10100 3900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX50
+U 1 1 61F59AE6
+P 10200 4450
+F 0 "MX50" H 10233 4673 60  0000 C CNN
+F 1 "MX-NoLED" H 10233 4599 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 9575 4425 60  0001 C CNN
+F 3 "" H 9575 4425 60  0001 C CNN
+	1    10200 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10100 4700 10100 4650
+Wire Wire Line
+	10100 4650 10150 4650
+Wire Wire Line
+	10150 4650 10150 4600
+$Comp
+L Device:D_Small D50
+U 1 1 61F59AEF
+P 10100 4800
+F 0 "D50" H 9950 4900 50  0000 R CNN
+F 1 "SOD-123" H 10350 4900 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 10100 4800 50  0001 C CNN
+F 3 "~" V 10100 4800 50  0001 C CNN
+	1    10100 4800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX51
+U 1 1 61F59AF5
+P 10200 5350
+F 0 "MX51" H 10233 5573 60  0000 C CNN
+F 1 "MX-NoLED" H 10233 5499 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 9575 5325 60  0001 C CNN
+F 3 "" H 9575 5325 60  0001 C CNN
+	1    10200 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10100 5600 10100 5550
+Wire Wire Line
+	10100 5550 10150 5550
+Wire Wire Line
+	10150 5550 10150 5500
+$Comp
+L Device:D_Small D51
+U 1 1 61F59AFE
+P 10100 5700
+F 0 "D51" H 9950 5800 50  0000 R CNN
+F 1 "SOD-123" H 10350 5800 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 10100 5700 50  0001 C CNN
+F 3 "~" V 10100 5700 50  0001 C CNN
+	1    10100 5700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX52
+U 1 1 61F59B04
+P 10200 6250
+F 0 "MX52" H 10233 6473 60  0000 C CNN
+F 1 "MX-NoLED" H 10233 6399 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 9575 6225 60  0001 C CNN
+F 3 "" H 9575 6225 60  0001 C CNN
+	1    10200 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10100 6500 10100 6450
+Wire Wire Line
+	10100 6450 10150 6450
+Wire Wire Line
+	10150 6450 10150 6400
+$Comp
+L Device:D_Small D52
+U 1 1 61F59B0D
+P 10100 6600
+F 0 "D52" H 9950 6700 50  0000 R CNN
+F 1 "SOD-123" H 10350 6700 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 10100 6600 50  0001 C CNN
+F 3 "~" V 10100 6600 50  0001 C CNN
+	1    10100 6600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX53
+U 1 1 61F59B13
+P 10200 7150
+F 0 "MX53" H 10233 7373 60  0000 C CNN
+F 1 "MX-NoLED" H 10233 7299 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 9575 7125 60  0001 C CNN
+F 3 "" H 9575 7125 60  0001 C CNN
+	1    10200 7150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10100 7400 10100 7350
+Wire Wire Line
+	10100 7350 10150 7350
+Wire Wire Line
+	10150 7350 10150 7300
+$Comp
+L Device:D_Small D53
+U 1 1 61F59B1C
+P 10100 7500
+F 0 "D53" H 9950 7600 50  0000 R CNN
+F 1 "SOD-123" H 10350 7600 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 10100 7500 50  0001 C CNN
+F 3 "~" V 10100 7500 50  0001 C CNN
+	1    10100 7500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX54
+U 1 1 61F59B22
+P 10200 8050
+F 0 "MX54" H 10233 8273 60  0000 C CNN
+F 1 "MX-NoLED" H 10233 8199 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 9575 8025 60  0001 C CNN
+F 3 "" H 9575 8025 60  0001 C CNN
+	1    10200 8050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10100 8300 10100 8250
+Wire Wire Line
+	10100 8250 10150 8250
+Wire Wire Line
+	10150 8250 10150 8200
+$Comp
+L Device:D_Small D54
+U 1 1 61F59B2B
+P 10100 8400
+F 0 "D54" H 9950 8500 50  0000 R CNN
+F 1 "SOD-123" H 10350 8500 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 10100 8400 50  0001 C CNN
+F 3 "~" V 10100 8400 50  0001 C CNN
+	1    10100 8400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	11950 8000 11850 8000
+Wire Wire Line
+	11950 3500 11950 8000
+Wire Wire Line
+	11850 3500 11950 3500
+Wire Wire Line
+	11450 7100 11450 6200
+Connection ~ 11450 7100
+Wire Wire Line
+	11400 7100 11450 7100
+Wire Wire Line
+	11450 6200 11450 5300
+Connection ~ 11450 6200
+Wire Wire Line
+	11400 6200 11450 6200
+Wire Wire Line
+	11450 5300 11450 4400
+Connection ~ 11450 5300
+Wire Wire Line
+	11400 5300 11450 5300
+Wire Wire Line
+	11450 4400 11450 3500
+Connection ~ 11450 4400
+Wire Wire Line
+	11400 4400 11450 4400
+Wire Wire Line
+	11450 3500 11400 3500
+Wire Wire Line
+	11450 8000 11450 7100
+Wire Wire Line
+	11400 8000 11450 8000
+Wire Wire Line
+	11000 7100 11000 6200
+Connection ~ 11000 7100
+Wire Wire Line
+	10900 7100 11000 7100
+Wire Wire Line
+	11000 6200 11000 5300
+Connection ~ 11000 6200
+Wire Wire Line
+	10900 6200 11000 6200
+Wire Wire Line
+	11000 5300 11000 4400
+Connection ~ 11000 5300
+Wire Wire Line
+	10900 5300 11000 5300
+Wire Wire Line
+	11000 4400 11000 3500
+Connection ~ 11000 4400
+Wire Wire Line
+	10900 4400 11000 4400
+Wire Wire Line
+	11000 3500 10900 3500
+Wire Wire Line
+	11000 8000 11000 7100
+Wire Wire Line
+	10900 8000 11000 8000
+Wire Wire Line
+	11650 8250 11650 8200
+Wire Wire Line
+	11600 8250 11650 8250
+Wire Wire Line
+	11600 8300 11600 8250
+$Comp
+L Device:D_Small D72
+U 1 1 61F59B55
+P 11600 8400
+F 0 "D72" H 11450 8500 50  0000 R CNN
+F 1 "SOD-123" H 11850 8500 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 11600 8400 50  0001 C CNN
+F 3 "~" V 11600 8400 50  0001 C CNN
+	1    11600 8400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	11200 8250 11200 8200
+Wire Wire Line
+	11150 8250 11200 8250
+Wire Wire Line
+	11150 8300 11150 8250
+$Comp
+L Device:D_Small D66
+U 1 1 61F59B5E
+P 11150 8400
+F 0 "D66" H 11000 8500 50  0000 R CNN
+F 1 "SOD-123" H 11400 8500 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 11150 8400 50  0001 C CNN
+F 3 "~" V 11150 8400 50  0001 C CNN
+	1    11150 8400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10700 8250 10700 8200
+Wire Wire Line
+	10650 8250 10700 8250
+Wire Wire Line
+	10650 8300 10650 8250
+$Comp
+L Device:D_Small D60
+U 1 1 61F59B67
+P 10650 8400
+F 0 "D60" H 10500 8500 50  0000 R CNN
+F 1 "SOD-123" H 10900 8500 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 10650 8400 50  0001 C CNN
+F 3 "~" V 10650 8400 50  0001 C CNN
+	1    10650 8400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX72
+U 1 1 61F59B6D
+P 11700 8050
+F 0 "MX72" H 11733 8273 60  0000 C CNN
+F 1 "MX-NoLED" H 11733 8199 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 11075 8025 60  0001 C CNN
+F 3 "" H 11075 8025 60  0001 C CNN
+	1    11700 8050
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX66
+U 1 1 61F59B73
+P 11250 8050
+F 0 "MX66" H 11283 8273 60  0000 C CNN
+F 1 "MX-NoLED" H 11283 8199 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 10625 8025 60  0001 C CNN
+F 3 "" H 10625 8025 60  0001 C CNN
+	1    11250 8050
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX60
+U 1 1 61F59B79
+P 10750 8050
+F 0 "MX60" H 10783 8273 60  0000 C CNN
+F 1 "MX-NoLED" H 10783 8199 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 10125 8025 60  0001 C CNN
+F 3 "" H 10125 8025 60  0001 C CNN
+	1    10750 8050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11650 7350 11650 7300
+Wire Wire Line
+	11600 7350 11650 7350
+Wire Wire Line
+	11600 7400 11600 7350
+$Comp
+L Device:D_Small D71
+U 1 1 61F59B82
+P 11600 7500
+F 0 "D71" H 11450 7600 50  0000 R CNN
+F 1 "SOD-123" H 11850 7600 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 11600 7500 50  0001 C CNN
+F 3 "~" V 11600 7500 50  0001 C CNN
+	1    11600 7500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	11200 7350 11200 7300
+Wire Wire Line
+	11150 7350 11200 7350
+Wire Wire Line
+	11150 7400 11150 7350
+$Comp
+L Device:D_Small D65
+U 1 1 61F59B8B
+P 11150 7500
+F 0 "D65" H 11000 7600 50  0000 R CNN
+F 1 "SOD-123" H 11400 7600 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 11150 7500 50  0001 C CNN
+F 3 "~" V 11150 7500 50  0001 C CNN
+	1    11150 7500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10700 7350 10700 7300
+Wire Wire Line
+	10650 7350 10700 7350
+Wire Wire Line
+	10650 7400 10650 7350
+$Comp
+L Device:D_Small D59
+U 1 1 61F59B94
+P 10650 7500
+F 0 "D59" H 10500 7600 50  0000 R CNN
+F 1 "SOD-123" H 10900 7600 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 10650 7500 50  0001 C CNN
+F 3 "~" V 10650 7500 50  0001 C CNN
+	1    10650 7500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX71
+U 1 1 61F59B9A
+P 11700 7150
+F 0 "MX71" H 11733 7373 60  0000 C CNN
+F 1 "MX-NoLED" H 11733 7299 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 11075 7125 60  0001 C CNN
+F 3 "" H 11075 7125 60  0001 C CNN
+	1    11700 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX65
+U 1 1 61F59BA0
+P 11250 7150
+F 0 "MX65" H 11283 7373 60  0000 C CNN
+F 1 "MX-NoLED" H 11283 7299 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 10625 7125 60  0001 C CNN
+F 3 "" H 10625 7125 60  0001 C CNN
+	1    11250 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX59
+U 1 1 61F59BA6
+P 10750 7150
+F 0 "MX59" H 10783 7373 60  0000 C CNN
+F 1 "MX-NoLED" H 10783 7299 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 10125 7125 60  0001 C CNN
+F 3 "" H 10125 7125 60  0001 C CNN
+	1    10750 7150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11650 6450 11650 6400
+Wire Wire Line
+	11600 6450 11650 6450
+Wire Wire Line
+	11600 6500 11600 6450
+$Comp
+L Device:D_Small D70
+U 1 1 61F59BAF
+P 11600 6600
+F 0 "D70" H 11450 6700 50  0000 R CNN
+F 1 "SOD-123" H 11850 6700 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 11600 6600 50  0001 C CNN
+F 3 "~" V 11600 6600 50  0001 C CNN
+	1    11600 6600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	11200 6450 11200 6400
+Wire Wire Line
+	11150 6450 11200 6450
+Wire Wire Line
+	11150 6500 11150 6450
+$Comp
+L Device:D_Small D64
+U 1 1 61F59BB8
+P 11150 6600
+F 0 "D64" H 11000 6700 50  0000 R CNN
+F 1 "SOD-123" H 11400 6700 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 11150 6600 50  0001 C CNN
+F 3 "~" V 11150 6600 50  0001 C CNN
+	1    11150 6600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10700 6450 10700 6400
+Wire Wire Line
+	10650 6450 10700 6450
+Wire Wire Line
+	10650 6500 10650 6450
+$Comp
+L Device:D_Small D58
+U 1 1 61F59BC1
+P 10650 6600
+F 0 "D58" H 10500 6700 50  0000 R CNN
+F 1 "SOD-123" H 10900 6700 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 10650 6600 50  0001 C CNN
+F 3 "~" V 10650 6600 50  0001 C CNN
+	1    10650 6600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX70
+U 1 1 61F59BC7
+P 11700 6250
+F 0 "MX70" H 11733 6473 60  0000 C CNN
+F 1 "MX-NoLED" H 11733 6399 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 11075 6225 60  0001 C CNN
+F 3 "" H 11075 6225 60  0001 C CNN
+	1    11700 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX64
+U 1 1 61F59BCD
+P 11250 6250
+F 0 "MX64" H 11283 6473 60  0000 C CNN
+F 1 "MX-NoLED" H 11283 6399 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 10625 6225 60  0001 C CNN
+F 3 "" H 10625 6225 60  0001 C CNN
+	1    11250 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX58
+U 1 1 61F59BD3
+P 10750 6250
+F 0 "MX58" H 10783 6473 60  0000 C CNN
+F 1 "MX-NoLED" H 10783 6399 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 10125 6225 60  0001 C CNN
+F 3 "" H 10125 6225 60  0001 C CNN
+	1    10750 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11650 5550 11650 5500
+Wire Wire Line
+	11600 5550 11650 5550
+Wire Wire Line
+	11600 5600 11600 5550
+$Comp
+L Device:D_Small D69
+U 1 1 61F59BDC
+P 11600 5700
+F 0 "D69" H 11450 5800 50  0000 R CNN
+F 1 "SOD-123" H 11850 5800 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 11600 5700 50  0001 C CNN
+F 3 "~" V 11600 5700 50  0001 C CNN
+	1    11600 5700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	11200 5550 11200 5500
+Wire Wire Line
+	11150 5550 11200 5550
+Wire Wire Line
+	11150 5600 11150 5550
+$Comp
+L Device:D_Small D63
+U 1 1 61F59BE5
+P 11150 5700
+F 0 "D63" H 11000 5800 50  0000 R CNN
+F 1 "SOD-123" H 11400 5800 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 11150 5700 50  0001 C CNN
+F 3 "~" V 11150 5700 50  0001 C CNN
+	1    11150 5700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10700 5550 10700 5500
+Wire Wire Line
+	10650 5550 10700 5550
+Wire Wire Line
+	10650 5600 10650 5550
+$Comp
+L Device:D_Small D57
+U 1 1 61F59BEE
+P 10650 5700
+F 0 "D57" H 10500 5800 50  0000 R CNN
+F 1 "SOD-123" H 10900 5800 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 10650 5700 50  0001 C CNN
+F 3 "~" V 10650 5700 50  0001 C CNN
+	1    10650 5700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX69
+U 1 1 61F59BF4
+P 11700 5350
+F 0 "MX69" H 11733 5573 60  0000 C CNN
+F 1 "MX-NoLED" H 11733 5499 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 11075 5325 60  0001 C CNN
+F 3 "" H 11075 5325 60  0001 C CNN
+	1    11700 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX63
+U 1 1 61F59BFA
+P 11250 5350
+F 0 "MX63" H 11283 5573 60  0000 C CNN
+F 1 "MX-NoLED" H 11283 5499 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 10625 5325 60  0001 C CNN
+F 3 "" H 10625 5325 60  0001 C CNN
+	1    11250 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX57
+U 1 1 61F59C00
+P 10750 5350
+F 0 "MX57" H 10783 5573 60  0000 C CNN
+F 1 "MX-NoLED" H 10783 5499 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 10125 5325 60  0001 C CNN
+F 3 "" H 10125 5325 60  0001 C CNN
+	1    10750 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11650 4650 11650 4600
+Wire Wire Line
+	11600 4650 11650 4650
+Wire Wire Line
+	11600 4700 11600 4650
+$Comp
+L Device:D_Small D68
+U 1 1 61F59C09
+P 11600 4800
+F 0 "D68" H 11450 4900 50  0000 R CNN
+F 1 "SOD-123" H 11850 4900 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 11600 4800 50  0001 C CNN
+F 3 "~" V 11600 4800 50  0001 C CNN
+	1    11600 4800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	11200 4650 11200 4600
+Wire Wire Line
+	11150 4650 11200 4650
+Wire Wire Line
+	11150 4700 11150 4650
+$Comp
+L Device:D_Small D62
+U 1 1 61F59C12
+P 11150 4800
+F 0 "D62" H 11000 4900 50  0000 R CNN
+F 1 "SOD-123" H 11400 4900 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 11150 4800 50  0001 C CNN
+F 3 "~" V 11150 4800 50  0001 C CNN
+	1    11150 4800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10700 4650 10700 4600
+Wire Wire Line
+	10650 4650 10700 4650
+Wire Wire Line
+	10650 4700 10650 4650
+$Comp
+L Device:D_Small D56
+U 1 1 61F59C1B
+P 10650 4800
+F 0 "D56" H 10500 4900 50  0000 R CNN
+F 1 "SOD-123" H 10900 4900 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 10650 4800 50  0001 C CNN
+F 3 "~" V 10650 4800 50  0001 C CNN
+	1    10650 4800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX68
+U 1 1 61F59C21
+P 11700 4450
+F 0 "MX68" H 11733 4673 60  0000 C CNN
+F 1 "MX-NoLED" H 11733 4599 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 11075 4425 60  0001 C CNN
+F 3 "" H 11075 4425 60  0001 C CNN
+	1    11700 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX62
+U 1 1 61F59C27
+P 11250 4450
+F 0 "MX62" H 11283 4673 60  0000 C CNN
+F 1 "MX-NoLED" H 11283 4599 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 10625 4425 60  0001 C CNN
+F 3 "" H 10625 4425 60  0001 C CNN
+	1    11250 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX56
+U 1 1 61F59C2D
+P 10750 4450
+F 0 "MX56" H 10783 4673 60  0000 C CNN
+F 1 "MX-NoLED" H 10783 4599 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 10125 4425 60  0001 C CNN
+F 3 "" H 10125 4425 60  0001 C CNN
+	1    10750 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11650 3750 11650 3700
+Wire Wire Line
+	11600 3750 11650 3750
+Wire Wire Line
+	11600 3800 11600 3750
+$Comp
+L Device:D_Small D67
+U 1 1 61F59C36
+P 11600 3900
+F 0 "D67" H 11450 4000 50  0000 R CNN
+F 1 "SOD-123" H 11850 4000 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 11600 3900 50  0001 C CNN
+F 3 "~" V 11600 3900 50  0001 C CNN
+	1    11600 3900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	11200 3750 11200 3700
+Wire Wire Line
+	11150 3750 11200 3750
+Wire Wire Line
+	11150 3800 11150 3750
+$Comp
+L Device:D_Small D61
+U 1 1 61F59C3F
+P 11150 3900
+F 0 "D61" H 11000 4000 50  0000 R CNN
+F 1 "SOD-123" H 11400 4000 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 11150 3900 50  0001 C CNN
+F 3 "~" V 11150 3900 50  0001 C CNN
+	1    11150 3900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10700 3750 10700 3700
+Wire Wire Line
+	10650 3750 10700 3750
+Wire Wire Line
+	10650 3800 10650 3750
+$Comp
+L Device:D_Small D55
+U 1 1 61F59C48
+P 10650 3900
+F 0 "D55" H 10500 4000 50  0000 R CNN
+F 1 "SOD-123" H 10900 4000 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 10650 3900 50  0001 C CNN
+F 3 "~" V 10650 3900 50  0001 C CNN
+	1    10650 3900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX67
+U 1 1 61F59C4E
+P 11700 3550
+F 0 "MX67" H 11733 3773 60  0000 C CNN
+F 1 "MX-NoLED" H 11733 3699 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 11075 3525 60  0001 C CNN
+F 3 "" H 11075 3525 60  0001 C CNN
+	1    11700 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX61
+U 1 1 61F59C54
+P 11250 3550
+F 0 "MX61" H 11283 3773 60  0000 C CNN
+F 1 "MX-NoLED" H 11283 3699 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 10625 3525 60  0001 C CNN
+F 3 "" H 10625 3525 60  0001 C CNN
+	1    11250 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX55
+U 1 1 61F59C5A
+P 10750 3550
+F 0 "MX55" H 10783 3773 60  0000 C CNN
+F 1 "MX-NoLED" H 10783 3699 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 10125 3525 60  0001 C CNN
+F 3 "" H 10125 3525 60  0001 C CNN
+	1    10750 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10350 3500 10450 3500
+Wire Wire Line
+	10350 8000 10450 8000
+Wire Wire Line
+	10350 7100 10450 7100
+Connection ~ 10450 7100
+Wire Wire Line
+	10450 7100 10450 8000
+Wire Wire Line
+	10350 6200 10450 6200
+Connection ~ 10450 6200
+Wire Wire Line
+	10450 6200 10450 7100
+Wire Wire Line
+	10350 5300 10450 5300
+Connection ~ 10450 5300
+Wire Wire Line
+	10450 5300 10450 6200
+Wire Wire Line
+	10350 4400 10450 4400
+Wire Wire Line
+	10450 3500 10450 4400
+Connection ~ 10450 4400
+Wire Wire Line
+	10450 4400 10450 5300
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX73
+U 1 1 61FB4E55
+P 12200 3550
+F 0 "MX73" H 12233 3773 60  0000 C CNN
+F 1 "MX-NoLED" H 12233 3699 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 11575 3525 60  0001 C CNN
+F 3 "" H 11575 3525 60  0001 C CNN
+	1    12200 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12100 3800 12100 3750
+Wire Wire Line
+	12100 3750 12150 3750
+Wire Wire Line
+	12150 3750 12150 3700
+$Comp
+L Device:D_Small D73
+U 1 1 61FB4E5E
+P 12100 3900
+F 0 "D73" H 11950 4000 50  0000 R CNN
+F 1 "SOD-123" H 12350 4000 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 12100 3900 50  0001 C CNN
+F 3 "~" V 12100 3900 50  0001 C CNN
+	1    12100 3900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX74
+U 1 1 61FB4E64
+P 12200 4450
+F 0 "MX74" H 12233 4673 60  0000 C CNN
+F 1 "MX-NoLED" H 12233 4599 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 11575 4425 60  0001 C CNN
+F 3 "" H 11575 4425 60  0001 C CNN
+	1    12200 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12100 4700 12100 4650
+Wire Wire Line
+	12100 4650 12150 4650
+Wire Wire Line
+	12150 4650 12150 4600
+$Comp
+L Device:D_Small D74
+U 1 1 61FB4E6D
+P 12100 4800
+F 0 "D74" H 11950 4900 50  0000 R CNN
+F 1 "SOD-123" H 12350 4900 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 12100 4800 50  0001 C CNN
+F 3 "~" V 12100 4800 50  0001 C CNN
+	1    12100 4800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX75
+U 1 1 61FB4E73
+P 12200 5350
+F 0 "MX75" H 12233 5573 60  0000 C CNN
+F 1 "MX-NoLED" H 12233 5499 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 11575 5325 60  0001 C CNN
+F 3 "" H 11575 5325 60  0001 C CNN
+	1    12200 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12100 5600 12100 5550
+Wire Wire Line
+	12100 5550 12150 5550
+Wire Wire Line
+	12150 5550 12150 5500
+$Comp
+L Device:D_Small D75
+U 1 1 61FB4E7C
+P 12100 5700
+F 0 "D75" H 11950 5800 50  0000 R CNN
+F 1 "SOD-123" H 12350 5800 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 12100 5700 50  0001 C CNN
+F 3 "~" V 12100 5700 50  0001 C CNN
+	1    12100 5700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX76
+U 1 1 61FB4E82
+P 12200 6250
+F 0 "MX76" H 12233 6473 60  0000 C CNN
+F 1 "MX-NoLED" H 12233 6399 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 11575 6225 60  0001 C CNN
+F 3 "" H 11575 6225 60  0001 C CNN
+	1    12200 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12100 6500 12100 6450
+Wire Wire Line
+	12100 6450 12150 6450
+Wire Wire Line
+	12150 6450 12150 6400
+$Comp
+L Device:D_Small D76
+U 1 1 61FB4E8B
+P 12100 6600
+F 0 "D76" H 11950 6700 50  0000 R CNN
+F 1 "SOD-123" H 12350 6700 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 12100 6600 50  0001 C CNN
+F 3 "~" V 12100 6600 50  0001 C CNN
+	1    12100 6600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX77
+U 1 1 61FB4E91
+P 12200 7150
+F 0 "MX77" H 12233 7373 60  0000 C CNN
+F 1 "MX-NoLED" H 12233 7299 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 11575 7125 60  0001 C CNN
+F 3 "" H 11575 7125 60  0001 C CNN
+	1    12200 7150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12100 7400 12100 7350
+Wire Wire Line
+	12100 7350 12150 7350
+Wire Wire Line
+	12150 7350 12150 7300
+$Comp
+L Device:D_Small D77
+U 1 1 61FB4E9A
+P 12100 7500
+F 0 "D77" H 11950 7600 50  0000 R CNN
+F 1 "SOD-123" H 12350 7600 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 12100 7500 50  0001 C CNN
+F 3 "~" V 12100 7500 50  0001 C CNN
+	1    12100 7500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX78
+U 1 1 61FB4EA0
+P 12200 8050
+F 0 "MX78" H 12233 8273 60  0000 C CNN
+F 1 "MX-NoLED" H 12233 8199 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 11575 8025 60  0001 C CNN
+F 3 "" H 11575 8025 60  0001 C CNN
+	1    12200 8050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12100 8300 12100 8250
+Wire Wire Line
+	12100 8250 12150 8250
+Wire Wire Line
+	12150 8250 12150 8200
+$Comp
+L Device:D_Small D78
+U 1 1 61FB4EA9
+P 12100 8400
+F 0 "D78" H 11950 8500 50  0000 R CNN
+F 1 "SOD-123" H 12350 8500 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 12100 8400 50  0001 C CNN
+F 3 "~" V 12100 8400 50  0001 C CNN
+	1    12100 8400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	13950 8000 13850 8000
+Wire Wire Line
+	13850 3500 13950 3500
+Wire Wire Line
+	13450 7100 13450 6200
+Connection ~ 13450 7100
+Wire Wire Line
+	13400 7100 13450 7100
+Wire Wire Line
+	13450 6200 13450 5300
+Connection ~ 13450 6200
+Wire Wire Line
+	13400 6200 13450 6200
+Wire Wire Line
+	13450 5300 13450 4400
+Connection ~ 13450 5300
+Wire Wire Line
+	13400 5300 13450 5300
+Wire Wire Line
+	13450 4400 13450 3500
+Connection ~ 13450 4400
+Wire Wire Line
+	13400 4400 13450 4400
+Wire Wire Line
+	13450 3500 13400 3500
+Wire Wire Line
+	13450 8000 13450 7100
+Wire Wire Line
+	13400 8000 13450 8000
+Wire Wire Line
+	13000 7100 13000 6200
+Connection ~ 13000 7100
+Wire Wire Line
+	12900 7100 13000 7100
+Wire Wire Line
+	13000 6200 13000 5300
+Connection ~ 13000 6200
+Wire Wire Line
+	12900 6200 13000 6200
+Wire Wire Line
+	13000 5300 13000 4400
+Connection ~ 13000 5300
+Wire Wire Line
+	12900 5300 13000 5300
+Wire Wire Line
+	13000 4400 13000 3500
+Connection ~ 13000 4400
+Wire Wire Line
+	12900 4400 13000 4400
+Wire Wire Line
+	13000 3500 12900 3500
+Wire Wire Line
+	13000 8000 13000 7100
+Wire Wire Line
+	12900 8000 13000 8000
+Wire Wire Line
+	13650 8250 13650 8200
+Wire Wire Line
+	13600 8250 13650 8250
+Wire Wire Line
+	13600 8300 13600 8250
+$Comp
+L Device:D_Small D96
+U 1 1 61FB4ED3
+P 13600 8400
+F 0 "D96" H 13450 8500 50  0000 R CNN
+F 1 "SOD-123" H 13850 8500 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 13600 8400 50  0001 C CNN
+F 3 "~" V 13600 8400 50  0001 C CNN
+	1    13600 8400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	13200 8250 13200 8200
+Wire Wire Line
+	13150 8250 13200 8250
+Wire Wire Line
+	13150 8300 13150 8250
+$Comp
+L Device:D_Small D90
+U 1 1 61FB4EDC
+P 13150 8400
+F 0 "D90" H 13000 8500 50  0000 R CNN
+F 1 "SOD-123" H 13400 8500 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 13150 8400 50  0001 C CNN
+F 3 "~" V 13150 8400 50  0001 C CNN
+	1    13150 8400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	12700 8250 12700 8200
+Wire Wire Line
+	12650 8250 12700 8250
+Wire Wire Line
+	12650 8300 12650 8250
+$Comp
+L Device:D_Small D84
+U 1 1 61FB4EE5
+P 12650 8400
+F 0 "D84" H 12500 8500 50  0000 R CNN
+F 1 "SOD-123" H 12900 8500 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 12650 8400 50  0001 C CNN
+F 3 "~" V 12650 8400 50  0001 C CNN
+	1    12650 8400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX96
+U 1 1 61FB4EEB
+P 13700 8050
+F 0 "MX96" H 13733 8273 60  0000 C CNN
+F 1 "MX-NoLED" H 13733 8199 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 13075 8025 60  0001 C CNN
+F 3 "" H 13075 8025 60  0001 C CNN
+	1    13700 8050
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX90
+U 1 1 61FB4EF1
+P 13250 8050
+F 0 "MX90" H 13283 8273 60  0000 C CNN
+F 1 "MX-NoLED" H 13283 8199 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 12625 8025 60  0001 C CNN
+F 3 "" H 12625 8025 60  0001 C CNN
+	1    13250 8050
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX84
+U 1 1 61FB4EF7
+P 12750 8050
+F 0 "MX84" H 12783 8273 60  0000 C CNN
+F 1 "MX-NoLED" H 12783 8199 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 12125 8025 60  0001 C CNN
+F 3 "" H 12125 8025 60  0001 C CNN
+	1    12750 8050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13650 7350 13650 7300
+Wire Wire Line
+	13600 7350 13650 7350
+Wire Wire Line
+	13600 7400 13600 7350
+$Comp
+L Device:D_Small D95
+U 1 1 61FB4F00
+P 13600 7500
+F 0 "D95" H 13450 7600 50  0000 R CNN
+F 1 "SOD-123" H 13850 7600 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 13600 7500 50  0001 C CNN
+F 3 "~" V 13600 7500 50  0001 C CNN
+	1    13600 7500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	13200 7350 13200 7300
+Wire Wire Line
+	13150 7350 13200 7350
+Wire Wire Line
+	13150 7400 13150 7350
+$Comp
+L Device:D_Small D89
+U 1 1 61FB4F09
+P 13150 7500
+F 0 "D89" H 13000 7600 50  0000 R CNN
+F 1 "SOD-123" H 13400 7600 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 13150 7500 50  0001 C CNN
+F 3 "~" V 13150 7500 50  0001 C CNN
+	1    13150 7500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	12700 7350 12700 7300
+Wire Wire Line
+	12650 7350 12700 7350
+Wire Wire Line
+	12650 7400 12650 7350
+$Comp
+L Device:D_Small D83
+U 1 1 61FB4F12
+P 12650 7500
+F 0 "D83" H 12500 7600 50  0000 R CNN
+F 1 "SOD-123" H 12900 7600 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 12650 7500 50  0001 C CNN
+F 3 "~" V 12650 7500 50  0001 C CNN
+	1    12650 7500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX95
+U 1 1 61FB4F18
+P 13700 7150
+F 0 "MX95" H 13733 7373 60  0000 C CNN
+F 1 "MX-NoLED" H 13733 7299 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 13075 7125 60  0001 C CNN
+F 3 "" H 13075 7125 60  0001 C CNN
+	1    13700 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX89
+U 1 1 61FB4F1E
+P 13250 7150
+F 0 "MX89" H 13283 7373 60  0000 C CNN
+F 1 "MX-NoLED" H 13283 7299 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 12625 7125 60  0001 C CNN
+F 3 "" H 12625 7125 60  0001 C CNN
+	1    13250 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX83
+U 1 1 61FB4F24
+P 12750 7150
+F 0 "MX83" H 12783 7373 60  0000 C CNN
+F 1 "MX-NoLED" H 12783 7299 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 12125 7125 60  0001 C CNN
+F 3 "" H 12125 7125 60  0001 C CNN
+	1    12750 7150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13650 6450 13650 6400
+Wire Wire Line
+	13600 6450 13650 6450
+Wire Wire Line
+	13600 6500 13600 6450
+$Comp
+L Device:D_Small D94
+U 1 1 61FB4F2D
+P 13600 6600
+F 0 "D94" H 13450 6700 50  0000 R CNN
+F 1 "SOD-123" H 13850 6700 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 13600 6600 50  0001 C CNN
+F 3 "~" V 13600 6600 50  0001 C CNN
+	1    13600 6600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	13200 6450 13200 6400
+Wire Wire Line
+	13150 6450 13200 6450
+Wire Wire Line
+	13150 6500 13150 6450
+$Comp
+L Device:D_Small D88
+U 1 1 61FB4F36
+P 13150 6600
+F 0 "D88" H 13000 6700 50  0000 R CNN
+F 1 "SOD-123" H 13400 6700 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 13150 6600 50  0001 C CNN
+F 3 "~" V 13150 6600 50  0001 C CNN
+	1    13150 6600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	12700 6450 12700 6400
+Wire Wire Line
+	12650 6450 12700 6450
+Wire Wire Line
+	12650 6500 12650 6450
+$Comp
+L Device:D_Small D82
+U 1 1 61FB4F3F
+P 12650 6600
+F 0 "D82" H 12500 6700 50  0000 R CNN
+F 1 "SOD-123" H 12900 6700 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 12650 6600 50  0001 C CNN
+F 3 "~" V 12650 6600 50  0001 C CNN
+	1    12650 6600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX94
+U 1 1 61FB4F45
+P 13700 6250
+F 0 "MX94" H 13733 6473 60  0000 C CNN
+F 1 "MX-NoLED" H 13733 6399 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 13075 6225 60  0001 C CNN
+F 3 "" H 13075 6225 60  0001 C CNN
+	1    13700 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX88
+U 1 1 61FB4F4B
+P 13250 6250
+F 0 "MX88" H 13283 6473 60  0000 C CNN
+F 1 "MX-NoLED" H 13283 6399 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 12625 6225 60  0001 C CNN
+F 3 "" H 12625 6225 60  0001 C CNN
+	1    13250 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX82
+U 1 1 61FB4F51
+P 12750 6250
+F 0 "MX82" H 12783 6473 60  0000 C CNN
+F 1 "MX-NoLED" H 12783 6399 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 12125 6225 60  0001 C CNN
+F 3 "" H 12125 6225 60  0001 C CNN
+	1    12750 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13650 5550 13650 5500
+Wire Wire Line
+	13600 5550 13650 5550
+Wire Wire Line
+	13600 5600 13600 5550
+$Comp
+L Device:D_Small D93
+U 1 1 61FB4F5A
+P 13600 5700
+F 0 "D93" H 13450 5800 50  0000 R CNN
+F 1 "SOD-123" H 13850 5800 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 13600 5700 50  0001 C CNN
+F 3 "~" V 13600 5700 50  0001 C CNN
+	1    13600 5700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	13200 5550 13200 5500
+Wire Wire Line
+	13150 5550 13200 5550
+Wire Wire Line
+	13150 5600 13150 5550
+$Comp
+L Device:D_Small D87
+U 1 1 61FB4F63
+P 13150 5700
+F 0 "D87" H 13000 5800 50  0000 R CNN
+F 1 "SOD-123" H 13400 5800 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 13150 5700 50  0001 C CNN
+F 3 "~" V 13150 5700 50  0001 C CNN
+	1    13150 5700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	12700 5550 12700 5500
+Wire Wire Line
+	12650 5550 12700 5550
+Wire Wire Line
+	12650 5600 12650 5550
+$Comp
+L Device:D_Small D81
+U 1 1 61FB4F6C
+P 12650 5700
+F 0 "D81" H 12500 5800 50  0000 R CNN
+F 1 "SOD-123" H 12900 5800 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 12650 5700 50  0001 C CNN
+F 3 "~" V 12650 5700 50  0001 C CNN
+	1    12650 5700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX93
+U 1 1 61FB4F72
+P 13700 5350
+F 0 "MX93" H 13733 5573 60  0000 C CNN
+F 1 "MX-NoLED" H 13733 5499 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 13075 5325 60  0001 C CNN
+F 3 "" H 13075 5325 60  0001 C CNN
+	1    13700 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX87
+U 1 1 61FB4F78
+P 13250 5350
+F 0 "MX87" H 13283 5573 60  0000 C CNN
+F 1 "MX-NoLED" H 13283 5499 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 12625 5325 60  0001 C CNN
+F 3 "" H 12625 5325 60  0001 C CNN
+	1    13250 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX81
+U 1 1 61FB4F7E
+P 12750 5350
+F 0 "MX81" H 12783 5573 60  0000 C CNN
+F 1 "MX-NoLED" H 12783 5499 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 12125 5325 60  0001 C CNN
+F 3 "" H 12125 5325 60  0001 C CNN
+	1    12750 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13650 4650 13650 4600
+Wire Wire Line
+	13600 4650 13650 4650
+Wire Wire Line
+	13600 4700 13600 4650
+$Comp
+L Device:D_Small D92
+U 1 1 61FB4F87
+P 13600 4800
+F 0 "D92" H 13450 4900 50  0000 R CNN
+F 1 "SOD-123" H 13850 4900 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 13600 4800 50  0001 C CNN
+F 3 "~" V 13600 4800 50  0001 C CNN
+	1    13600 4800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	13200 4650 13200 4600
+Wire Wire Line
+	13150 4650 13200 4650
+Wire Wire Line
+	13150 4700 13150 4650
+$Comp
+L Device:D_Small D86
+U 1 1 61FB4F90
+P 13150 4800
+F 0 "D86" H 13000 4900 50  0000 R CNN
+F 1 "SOD-123" H 13400 4900 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 13150 4800 50  0001 C CNN
+F 3 "~" V 13150 4800 50  0001 C CNN
+	1    13150 4800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	12700 4650 12700 4600
+Wire Wire Line
+	12650 4650 12700 4650
+Wire Wire Line
+	12650 4700 12650 4650
+$Comp
+L Device:D_Small D80
+U 1 1 61FB4F99
+P 12650 4800
+F 0 "D80" H 12500 4900 50  0000 R CNN
+F 1 "SOD-123" H 12900 4900 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 12650 4800 50  0001 C CNN
+F 3 "~" V 12650 4800 50  0001 C CNN
+	1    12650 4800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX92
+U 1 1 61FB4F9F
+P 13700 4450
+F 0 "MX92" H 13733 4673 60  0000 C CNN
+F 1 "MX-NoLED" H 13733 4599 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 13075 4425 60  0001 C CNN
+F 3 "" H 13075 4425 60  0001 C CNN
+	1    13700 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX86
+U 1 1 61FB4FA5
+P 13250 4450
+F 0 "MX86" H 13283 4673 60  0000 C CNN
+F 1 "MX-NoLED" H 13283 4599 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 12625 4425 60  0001 C CNN
+F 3 "" H 12625 4425 60  0001 C CNN
+	1    13250 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX80
+U 1 1 61FB4FAB
+P 12750 4450
+F 0 "MX80" H 12783 4673 60  0000 C CNN
+F 1 "MX-NoLED" H 12783 4599 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 12125 4425 60  0001 C CNN
+F 3 "" H 12125 4425 60  0001 C CNN
+	1    12750 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13650 3750 13650 3700
+Wire Wire Line
+	13600 3750 13650 3750
+Wire Wire Line
+	13600 3800 13600 3750
+$Comp
+L Device:D_Small D91
+U 1 1 61FB4FB4
+P 13600 3900
+F 0 "D91" H 13450 4000 50  0000 R CNN
+F 1 "SOD-123" H 13850 4000 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 13600 3900 50  0001 C CNN
+F 3 "~" V 13600 3900 50  0001 C CNN
+	1    13600 3900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	13200 3750 13200 3700
+Wire Wire Line
+	13150 3750 13200 3750
+Wire Wire Line
+	13150 3800 13150 3750
+$Comp
+L Device:D_Small D85
+U 1 1 61FB4FBD
+P 13150 3900
+F 0 "D85" H 13000 4000 50  0000 R CNN
+F 1 "SOD-123" H 13400 4000 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 13150 3900 50  0001 C CNN
+F 3 "~" V 13150 3900 50  0001 C CNN
+	1    13150 3900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	12700 3750 12700 3700
+Wire Wire Line
+	12650 3750 12700 3750
+Wire Wire Line
+	12650 3800 12650 3750
+$Comp
+L Device:D_Small D79
+U 1 1 61FB4FC6
+P 12650 3900
+F 0 "D79" H 12500 4000 50  0000 R CNN
+F 1 "SOD-123" H 12900 4000 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 12650 3900 50  0001 C CNN
+F 3 "~" V 12650 3900 50  0001 C CNN
+	1    12650 3900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX91
+U 1 1 61FB4FCC
+P 13700 3550
+F 0 "MX91" H 13733 3773 60  0000 C CNN
+F 1 "MX-NoLED" H 13733 3699 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 13075 3525 60  0001 C CNN
+F 3 "" H 13075 3525 60  0001 C CNN
+	1    13700 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX85
+U 1 1 61FB4FD2
+P 13250 3550
+F 0 "MX85" H 13283 3773 60  0000 C CNN
+F 1 "MX-NoLED" H 13283 3699 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 12625 3525 60  0001 C CNN
+F 3 "" H 12625 3525 60  0001 C CNN
+	1    13250 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX79
+U 1 1 61FB4FD8
+P 12750 3550
+F 0 "MX79" H 12783 3773 60  0000 C CNN
+F 1 "MX-NoLED" H 12783 3699 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 12125 3525 60  0001 C CNN
+F 3 "" H 12125 3525 60  0001 C CNN
+	1    12750 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12350 3500 12450 3500
+Wire Wire Line
+	12350 8000 12450 8000
+Wire Wire Line
+	12350 7100 12450 7100
+Connection ~ 12450 7100
+Wire Wire Line
+	12450 7100 12450 8000
+Wire Wire Line
+	12350 6200 12450 6200
+Connection ~ 12450 6200
+Wire Wire Line
+	12450 6200 12450 7100
+Wire Wire Line
+	12350 5300 12450 5300
+Connection ~ 12450 5300
+Wire Wire Line
+	12450 5300 12450 6200
+Wire Wire Line
+	12350 4400 12450 4400
+Wire Wire Line
+	12450 3500 12450 4400
+Connection ~ 12450 4400
+Wire Wire Line
+	12450 4400 12450 5300
+Wire Wire Line
+	13600 4000 13600 4100
+Wire Wire Line
+	13150 4000 13150 4100
+Connection ~ 13150 4100
+Wire Wire Line
+	13150 4100 13600 4100
+Wire Wire Line
+	12650 4000 12650 4100
+Connection ~ 12650 4100
+Wire Wire Line
+	12650 4100 13150 4100
+Wire Wire Line
+	12100 4000 12100 4100
+Connection ~ 12100 4100
+Wire Wire Line
+	12100 4100 12650 4100
+Wire Wire Line
+	11600 4000 11600 4100
+Wire Wire Line
+	6100 4100 6650 4100
+Connection ~ 11600 4100
+Wire Wire Line
+	11600 4100 12100 4100
+Wire Wire Line
+	11150 4000 11150 4100
+Connection ~ 11150 4100
+Wire Wire Line
+	11150 4100 11600 4100
+Wire Wire Line
+	10650 4000 10650 4100
+Connection ~ 10650 4100
+Wire Wire Line
+	10650 4100 11150 4100
+Wire Wire Line
+	10100 4000 10100 4100
+Connection ~ 10100 4100
+Wire Wire Line
+	10100 4100 10650 4100
+Wire Wire Line
+	9600 4000 9600 4100
+Connection ~ 9600 4100
+Wire Wire Line
+	9600 4100 10100 4100
+Wire Wire Line
+	9150 4000 9150 4100
+Connection ~ 9150 4100
+Wire Wire Line
+	9150 4100 9600 4100
+Wire Wire Line
+	8650 4000 8650 4100
+Connection ~ 8650 4100
+Wire Wire Line
+	8650 4100 9150 4100
+Wire Wire Line
+	8100 4000 8100 4100
+Connection ~ 8100 4100
+Wire Wire Line
+	8100 4100 8650 4100
+Wire Wire Line
+	7600 4000 7600 4100
+Connection ~ 7600 4100
+Wire Wire Line
+	7600 4100 8100 4100
+Wire Wire Line
+	7150 4000 7150 4100
+Connection ~ 7150 4100
+Wire Wire Line
+	7150 4100 7600 4100
+Wire Wire Line
+	6650 4000 6650 4100
+Connection ~ 6650 4100
+Wire Wire Line
+	6650 4100 7150 4100
+Wire Wire Line
+	6100 4000 6100 4100
+Wire Wire Line
+	6100 5000 6650 5000
+Wire Wire Line
+	6100 4900 6100 5000
+Wire Wire Line
+	6650 4900 6650 5000
+Connection ~ 6650 5000
+Wire Wire Line
+	6650 5000 7150 5000
+Wire Wire Line
+	7150 4900 7150 5000
+Connection ~ 7150 5000
+Wire Wire Line
+	7150 5000 7600 5000
+Wire Wire Line
+	7600 4900 7600 5000
+Connection ~ 7600 5000
+Wire Wire Line
+	7600 5000 8100 5000
+Wire Wire Line
+	8100 4900 8100 5000
+Connection ~ 8100 5000
+Wire Wire Line
+	8100 5000 8650 5000
+Wire Wire Line
+	8650 4900 8650 5000
+Connection ~ 8650 5000
+Wire Wire Line
+	8650 5000 9150 5000
+Wire Wire Line
+	9150 4900 9150 5000
+Connection ~ 9150 5000
+Wire Wire Line
+	9150 5000 9600 5000
+Wire Wire Line
+	9600 4900 9600 5000
+Connection ~ 9600 5000
+Wire Wire Line
+	9600 5000 10100 5000
+Wire Wire Line
+	10100 4900 10100 5000
+Connection ~ 10100 5000
+Wire Wire Line
+	10100 5000 10650 5000
+Wire Wire Line
+	10650 4900 10650 5000
+Connection ~ 10650 5000
+Wire Wire Line
+	10650 5000 11150 5000
+Wire Wire Line
+	11150 4900 11150 5000
+Connection ~ 11150 5000
+Wire Wire Line
+	11150 5000 11600 5000
+Wire Wire Line
+	11600 4900 11600 5000
+Connection ~ 11600 5000
+Wire Wire Line
+	11600 5000 12100 5000
+Wire Wire Line
+	12100 4900 12100 5000
+Connection ~ 12100 5000
+Wire Wire Line
+	12100 5000 12650 5000
+Wire Wire Line
+	12650 4900 12650 5000
+Connection ~ 12650 5000
+Wire Wire Line
+	12650 5000 13150 5000
+Wire Wire Line
+	13150 4900 13150 5000
+Connection ~ 13150 5000
+Wire Wire Line
+	13150 5000 13600 5000
+Wire Wire Line
+	13600 4900 13600 5000
+Wire Wire Line
+	13600 5900 13600 5800
+Wire Wire Line
+	13150 5800 13150 5900
+Connection ~ 13150 5900
+Wire Wire Line
+	13150 5900 13600 5900
+Wire Wire Line
+	12650 5800 12650 5900
+Connection ~ 12650 5900
+Wire Wire Line
+	12650 5900 13150 5900
+Wire Wire Line
+	12100 5800 12100 5900
+Connection ~ 12100 5900
+Wire Wire Line
+	12100 5900 12650 5900
+Wire Wire Line
+	11600 5800 11600 5900
+Connection ~ 11600 5900
+Wire Wire Line
+	11600 5900 12100 5900
+Wire Wire Line
+	11150 5800 11150 5900
+Connection ~ 11150 5900
+Wire Wire Line
+	11150 5900 11600 5900
+Wire Wire Line
+	10650 5800 10650 5900
+Connection ~ 10650 5900
+Wire Wire Line
+	10650 5900 11150 5900
+Wire Wire Line
+	10100 5800 10100 5900
+Connection ~ 10100 5900
+Wire Wire Line
+	10100 5900 10650 5900
+Wire Wire Line
+	9600 5800 9600 5900
+Connection ~ 9600 5900
+Wire Wire Line
+	9600 5900 10100 5900
+Wire Wire Line
+	9150 5800 9150 5900
+Connection ~ 9150 5900
+Wire Wire Line
+	9150 5900 9600 5900
+Wire Wire Line
+	8650 5800 8650 5900
+Wire Wire Line
+	6100 5900 6650 5900
+Connection ~ 8650 5900
+Wire Wire Line
+	8650 5900 9150 5900
+Wire Wire Line
+	8100 5800 8100 5900
+Connection ~ 8100 5900
+Wire Wire Line
+	8100 5900 8650 5900
+Wire Wire Line
+	7600 5800 7600 5900
+Connection ~ 7600 5900
+Wire Wire Line
+	7600 5900 8100 5900
+Wire Wire Line
+	7150 5800 7150 5900
+Connection ~ 7150 5900
+Wire Wire Line
+	7150 5900 7600 5900
+Wire Wire Line
+	6650 5800 6650 5900
+Connection ~ 6650 5900
+Wire Wire Line
+	6650 5900 7150 5900
+Wire Wire Line
+	6100 5800 6100 5900
+Wire Wire Line
+	13600 6800 13600 6700
+Wire Wire Line
+	13150 6700 13150 6800
+Wire Wire Line
+	6100 6800 6650 6800
+Connection ~ 13150 6800
+Wire Wire Line
+	13150 6800 13600 6800
+Wire Wire Line
+	12650 6700 12650 6800
+Connection ~ 12650 6800
+Wire Wire Line
+	12650 6800 13150 6800
+Wire Wire Line
+	12100 6700 12100 6800
+Connection ~ 12100 6800
+Wire Wire Line
+	12100 6800 12650 6800
+Wire Wire Line
+	11600 6700 11600 6800
+Connection ~ 11600 6800
+Wire Wire Line
+	11600 6800 12100 6800
+Wire Wire Line
+	11150 6700 11150 6800
+Connection ~ 11150 6800
+Wire Wire Line
+	11150 6800 11600 6800
+Wire Wire Line
+	10650 6700 10650 6800
+Connection ~ 10650 6800
+Wire Wire Line
+	10650 6800 11150 6800
+Wire Wire Line
+	10650 6800 10100 6800
+Wire Wire Line
+	10100 6800 10100 6700
+Connection ~ 10100 6800
+Wire Wire Line
+	10100 6800 9600 6800
+Wire Wire Line
+	9600 6800 9600 6700
+Connection ~ 9600 6800
+Wire Wire Line
+	9600 6800 9150 6800
+Connection ~ 9150 6800
+Wire Wire Line
+	9150 6800 9150 6700
+Wire Wire Line
+	8650 6700 8650 6800
+Connection ~ 8650 6800
+Wire Wire Line
+	8650 6800 9150 6800
+Wire Wire Line
+	8100 6700 8100 6800
+Connection ~ 8100 6800
+Wire Wire Line
+	8100 6800 8650 6800
+Wire Wire Line
+	7600 6700 7600 6800
+Connection ~ 7600 6800
+Wire Wire Line
+	7600 6800 8100 6800
+Wire Wire Line
+	7150 6700 7150 6800
+Connection ~ 7150 6800
+Wire Wire Line
+	7150 6800 7600 6800
+Wire Wire Line
+	6650 6700 6650 6800
+Connection ~ 6650 6800
+Wire Wire Line
+	6650 6800 7150 6800
+Wire Wire Line
+	6100 6700 6100 6800
+Wire Wire Line
+	6100 7700 6650 7700
+Wire Wire Line
+	13600 7700 13600 7600
+Wire Wire Line
+	13150 7600 13150 7700
+Connection ~ 13150 7700
+Wire Wire Line
+	13150 7700 13600 7700
+Wire Wire Line
+	12650 7600 12650 7700
+Connection ~ 12650 7700
+Wire Wire Line
+	12650 7700 13150 7700
+Wire Wire Line
+	12100 7600 12100 7700
+Connection ~ 12100 7700
+Wire Wire Line
+	12100 7700 12650 7700
+Wire Wire Line
+	11600 7600 11600 7700
+Connection ~ 11600 7700
+Wire Wire Line
+	11600 7700 12100 7700
+Wire Wire Line
+	11150 7600 11150 7700
+Connection ~ 11150 7700
+Wire Wire Line
+	11150 7700 11600 7700
+Wire Wire Line
+	10650 7600 10650 7700
+Connection ~ 10650 7700
+Wire Wire Line
+	10650 7700 11150 7700
+Wire Wire Line
+	10100 7600 10100 7700
+Connection ~ 10100 7700
+Wire Wire Line
+	10100 7700 10650 7700
+Wire Wire Line
+	9600 7600 9600 7700
+Connection ~ 9600 7700
+Wire Wire Line
+	9600 7700 10100 7700
+Wire Wire Line
+	9150 7600 9150 7700
+Connection ~ 9150 7700
+Wire Wire Line
+	9150 7700 9600 7700
+Wire Wire Line
+	8650 7600 8650 7700
+Connection ~ 8650 7700
+Wire Wire Line
+	8650 7700 9150 7700
+Wire Wire Line
+	8100 7600 8100 7700
+Connection ~ 8100 7700
+Wire Wire Line
+	8100 7700 8650 7700
+Wire Wire Line
+	7600 7600 7600 7700
+Connection ~ 7600 7700
+Wire Wire Line
+	7600 7700 8100 7700
+Wire Wire Line
+	7150 7600 7150 7700
+Connection ~ 7150 7700
+Wire Wire Line
+	7150 7700 7600 7700
+Wire Wire Line
+	6650 7600 6650 7700
+Connection ~ 6650 7700
+Wire Wire Line
+	6650 7700 7150 7700
+Wire Wire Line
+	6100 7600 6100 7700
+Wire Wire Line
+	6100 8600 6650 8600
+Wire Wire Line
+	13600 8600 13600 8500
+Wire Wire Line
+	13150 8500 13150 8600
+Connection ~ 13150 8600
+Wire Wire Line
+	13150 8600 13600 8600
+Wire Wire Line
+	12650 8500 12650 8600
+Connection ~ 12650 8600
+Wire Wire Line
+	12650 8600 13150 8600
+Wire Wire Line
+	12100 8500 12100 8600
+Connection ~ 12100 8600
+Wire Wire Line
+	12100 8600 12650 8600
+Wire Wire Line
+	11600 8500 11600 8600
+Connection ~ 11600 8600
+Wire Wire Line
+	11600 8600 12100 8600
+Wire Wire Line
+	11150 8500 11150 8600
+Connection ~ 11150 8600
+Wire Wire Line
+	11150 8600 11600 8600
+Wire Wire Line
+	10650 8500 10650 8600
+Connection ~ 10650 8600
+Wire Wire Line
+	10650 8600 11150 8600
+Wire Wire Line
+	10100 8500 10100 8600
+Connection ~ 10100 8600
+Wire Wire Line
+	10100 8600 10650 8600
+Wire Wire Line
+	9600 8500 9600 8600
+Connection ~ 9600 8600
+Wire Wire Line
+	9600 8600 10100 8600
+Wire Wire Line
+	9150 8500 9150 8600
+Connection ~ 9150 8600
+Wire Wire Line
+	9150 8600 9600 8600
+Wire Wire Line
+	8650 8500 8650 8600
+Connection ~ 8650 8600
+Wire Wire Line
+	8650 8600 9150 8600
+Wire Wire Line
+	8100 8500 8100 8600
+Connection ~ 8100 8600
+Wire Wire Line
+	8100 8600 8650 8600
+Wire Wire Line
+	7600 8500 7600 8600
+Connection ~ 7600 8600
+Wire Wire Line
+	7600 8600 8100 8600
+Wire Wire Line
+	7150 8500 7150 8600
+Connection ~ 7150 8600
+Wire Wire Line
+	7150 8600 7600 8600
+Wire Wire Line
+	6650 8500 6650 8600
+Connection ~ 6650 8600
+Wire Wire Line
+	6650 8600 7150 8600
+Wire Wire Line
+	6100 8500 6100 8600
+Text GLabel 6450 3200 1    50   Input ~ 0
+COL0
+Wire Wire Line
+	6450 3500 6450 3200
+Connection ~ 6450 3500
+Text GLabel 7000 3200 1    50   Input ~ 0
+COL1
+Wire Wire Line
+	7000 3200 7000 3500
+Connection ~ 7000 3500
+Text GLabel 7450 3200 1    50   Input ~ 0
+COL2
+Text GLabel 7950 3200 1    50   Input ~ 0
+COL3
+Wire Wire Line
+	7450 3200 7450 3500
+Connection ~ 7450 3500
+Wire Wire Line
+	7950 3200 7950 3500
+Connection ~ 7950 3500
+Text GLabel 8450 3200 1    50   Input ~ 0
+COL4
+Wire Wire Line
+	8450 3200 8450 3500
+Connection ~ 8450 3500
+Text GLabel 9000 3200 1    50   Input ~ 0
+COL5
+Wire Wire Line
+	9000 3200 9000 3500
+Connection ~ 9000 3500
+Text GLabel 9450 3200 1    50   Input ~ 0
+COL6
+Wire Wire Line
+	9450 3200 9450 3500
+Connection ~ 9450 3500
+Text GLabel 9950 3200 1    50   Input ~ 0
+COL7
+Wire Wire Line
+	9950 3500 9950 3200
+Connection ~ 9950 3500
+Text GLabel 10450 3200 1    50   Input ~ 0
+COL8
+Wire Wire Line
+	10450 3500 10450 3200
+Connection ~ 10450 3500
+Text GLabel 11000 3200 1    50   Input ~ 0
+COL9
+Wire Wire Line
+	11000 3200 11000 3500
+Connection ~ 11000 3500
+Text GLabel 11450 3200 1    50   Input ~ 0
+COL10
+Wire Wire Line
+	11450 3500 11450 3200
+Connection ~ 11450 3500
+Text GLabel 11950 3200 1    50   Input ~ 0
+COL11
+Wire Wire Line
+	11950 3200 11950 3500
+Connection ~ 11950 3500
+Text GLabel 12450 3200 1    50   Input ~ 0
+COL12
+Wire Wire Line
+	12450 3500 12450 3200
+Connection ~ 12450 3500
+Text GLabel 13000 3200 1    50   Input ~ 0
+COL13
+Wire Wire Line
+	13000 3200 13000 3500
+Connection ~ 13000 3500
+Text GLabel 13450 3200 1    50   Input ~ 0
+COL14
+Wire Wire Line
+	13450 3500 13450 3200
+Connection ~ 13450 3500
+Text GLabel 13950 3200 1    50   Input ~ 0
+COL15
+Wire Wire Line
+	13950 3500 13950 3200
+Connection ~ 13950 3500
+Wire Wire Line
+	14400 8000 14300 8000
+Wire Wire Line
+	14400 3500 14400 4400
+Wire Wire Line
+	14300 3500 14400 3500
+Wire Wire Line
+	14100 8250 14100 8200
+Wire Wire Line
+	14050 8250 14100 8250
+Wire Wire Line
+	14050 8300 14050 8250
+$Comp
+L Device:D_Small D102
+U 1 1 66601D35
+P 14050 8400
+F 0 "D102" H 13900 8500 50  0000 R CNN
+F 1 "SOD-123" H 14300 8500 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 14050 8400 50  0001 C CNN
+F 3 "~" V 14050 8400 50  0001 C CNN
+	1    14050 8400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX102
+U 1 1 66601D3B
+P 14150 8050
+F 0 "MX102" H 14183 8273 60  0000 C CNN
+F 1 "MX-NoLED" H 14183 8199 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 13525 8025 60  0001 C CNN
+F 3 "" H 13525 8025 60  0001 C CNN
+	1    14150 8050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14100 7350 14100 7300
+Wire Wire Line
+	14050 7350 14100 7350
+Wire Wire Line
+	14050 7400 14050 7350
+$Comp
+L Device:D_Small D101
+U 1 1 66601D44
+P 14050 7500
+F 0 "D101" H 13900 7600 50  0000 R CNN
+F 1 "SOD-123" H 14300 7600 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 14050 7500 50  0001 C CNN
+F 3 "~" V 14050 7500 50  0001 C CNN
+	1    14050 7500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX101
+U 1 1 66601D4A
+P 14150 7150
+F 0 "MX101" H 14183 7373 60  0000 C CNN
+F 1 "MX-NoLED" H 14183 7299 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 13525 7125 60  0001 C CNN
+F 3 "" H 13525 7125 60  0001 C CNN
+	1    14150 7150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14100 6450 14100 6400
+Wire Wire Line
+	14050 6450 14100 6450
+Wire Wire Line
+	14050 6500 14050 6450
+$Comp
+L Device:D_Small D100
+U 1 1 66601D53
+P 14050 6600
+F 0 "D100" H 13900 6700 50  0000 R CNN
+F 1 "SOD-123" H 14300 6700 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 14050 6600 50  0001 C CNN
+F 3 "~" V 14050 6600 50  0001 C CNN
+	1    14050 6600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX100
+U 1 1 66601D59
+P 14150 6250
+F 0 "MX100" H 14183 6473 60  0000 C CNN
+F 1 "MX-NoLED" H 14183 6399 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 13525 6225 60  0001 C CNN
+F 3 "" H 13525 6225 60  0001 C CNN
+	1    14150 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14100 5550 14100 5500
+Wire Wire Line
+	14050 5550 14100 5550
+Wire Wire Line
+	14050 5600 14050 5550
+$Comp
+L Device:D_Small D99
+U 1 1 66601D62
+P 14050 5700
+F 0 "D99" H 13900 5800 50  0000 R CNN
+F 1 "SOD-123" H 14300 5800 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 14050 5700 50  0001 C CNN
+F 3 "~" V 14050 5700 50  0001 C CNN
+	1    14050 5700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX99
+U 1 1 66601D68
+P 14150 5350
+F 0 "MX99" H 14183 5573 60  0000 C CNN
+F 1 "MX-NoLED" H 14183 5499 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 13525 5325 60  0001 C CNN
+F 3 "" H 13525 5325 60  0001 C CNN
+	1    14150 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14100 4650 14100 4600
+Wire Wire Line
+	14050 4650 14100 4650
+Wire Wire Line
+	14050 4700 14050 4650
+$Comp
+L Device:D_Small D98
+U 1 1 66601D71
+P 14050 4800
+F 0 "D98" H 13900 4900 50  0000 R CNN
+F 1 "SOD-123" H 14300 4900 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 14050 4800 50  0001 C CNN
+F 3 "~" V 14050 4800 50  0001 C CNN
+	1    14050 4800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX98
+U 1 1 66601D77
+P 14150 4450
+F 0 "MX98" H 14183 4673 60  0000 C CNN
+F 1 "MX-NoLED" H 14183 4599 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 13525 4425 60  0001 C CNN
+F 3 "" H 13525 4425 60  0001 C CNN
+	1    14150 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14100 3750 14100 3700
+Wire Wire Line
+	14050 3750 14100 3750
+Wire Wire Line
+	14050 3800 14050 3750
+$Comp
+L Device:D_Small D97
+U 1 1 66601D80
+P 14050 3900
+F 0 "D97" H 13900 4000 50  0000 R CNN
+F 1 "SOD-123" H 14300 4000 50  0000 R CNN
+F 2 "random-keyboard-parts:D_SOD-123-Pretty" V 14050 3900 50  0001 C CNN
+F 3 "~" V 14050 3900 50  0001 C CNN
+	1    14050 3900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L MX_Alps_Hybrid:MX-NoLED MX97
+U 1 1 66601D86
+P 14150 3550
+F 0 "MX97" H 14183 3773 60  0000 C CNN
+F 1 "MX-NoLED" H 14183 3699 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-Hotswap-Antishear" H 13525 3525 60  0001 C CNN
+F 3 "" H 13525 3525 60  0001 C CNN
+	1    14150 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14050 4000 14050 4100
+Wire Wire Line
+	13600 4100 14050 4100
+Wire Wire Line
+	13600 5000 14050 5000
+Wire Wire Line
+	14050 4900 14050 5000
+Wire Wire Line
+	14050 5900 14050 5800
+Wire Wire Line
+	13600 5900 14050 5900
+Wire Wire Line
+	14050 6800 14050 6700
+Wire Wire Line
+	13600 6800 14050 6800
+Wire Wire Line
+	14050 7700 14050 7600
+Wire Wire Line
+	13600 7700 14050 7700
+Wire Wire Line
+	14050 8600 14050 8500
+Wire Wire Line
+	13600 8600 14050 8600
+Text GLabel 14400 3200 1    50   Input ~ 0
+COL16
+Wire Wire Line
+	14400 3500 14400 3200
+Connection ~ 14400 3500
+Connection ~ 13600 4100
+Connection ~ 13600 5000
+Connection ~ 13600 5900
+Connection ~ 13600 6800
+Connection ~ 13600 7700
+Connection ~ 13600 8600
+Wire Wire Line
+	14300 4400 14400 4400
+Connection ~ 14400 4400
+Wire Wire Line
+	14400 4400 14400 5300
+Wire Wire Line
+	14300 5300 14400 5300
+Connection ~ 14400 5300
+Wire Wire Line
+	14400 5300 14400 6200
+Wire Wire Line
+	14300 6200 14400 6200
+Connection ~ 14400 6200
+Wire Wire Line
+	14400 6200 14400 7100
+Wire Wire Line
+	14300 7100 14400 7100
+Connection ~ 14400 7100
+Wire Wire Line
+	14400 7100 14400 8000
+Text GLabel 5750 4100 0    50   Input ~ 0
+ROW0
+$Comp
+L Device:LED_Small LED2
+U 1 1 6125A750
+P 6100 1400
+F 0 "LED2" V 6146 1332 50  0000 R CNN
+F 1 "Yellow" V 6055 1332 50  0000 R CNN
+F 2 "LED_SMD:LED_0201_0603Metric" V 6100 1400 50  0001 C CNN
+F 3 "~" V 6100 1400 50  0001 C CNN
+	1    6100 1400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small LED1
+U 1 1 6129367E
+P 2550 1250
+F 0 "LED1" V 2596 1182 50  0000 R CNN
+F 1 "PWR" V 2505 1182 50  0000 R CNN
+F 2 "LED_SMD:LED_0201_0603Metric" V 2550 1250 50  0001 C CNN
+F 3 "~" V 2550 1250 50  0001 C CNN
+	1    2550 1250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	13950 3500 13950 8000
+Wire Wire Line
+	5750 4100 6100 4100
+Connection ~ 6100 4100
+Text GLabel 5750 5000 0    50   Input ~ 0
+ROW1
+Wire Wire Line
+	5750 5000 6100 5000
+Connection ~ 6100 5000
+Text GLabel 5750 5900 0    50   Input ~ 0
+ROW2
+Wire Wire Line
+	5750 5900 6100 5900
+Connection ~ 6100 5900
+Text GLabel 5750 6800 0    50   Input ~ 0
+ROW3
+Wire Wire Line
+	5750 6800 6100 6800
+Connection ~ 6100 6800
+Text GLabel 5750 7700 0    50   Input ~ 0
+ROW4
+Wire Wire Line
+	5750 7700 6100 7700
+Connection ~ 6100 7700
+Text GLabel 5750 8600 0    50   Input ~ 0
+ROW5
+Wire Wire Line
+	5750 8600 6100 8600
+Connection ~ 6100 8600
+$Comp
+L Connector_Generic:Conn_01x03 J?
+U 1 1 66F5D2F4
+P 1150 8700
+F 0 "J?" V 1022 8880 50  0000 L CNN
+F 1 "Conn_01x03" V 1113 8880 50  0000 L CNN
+F 2 "" H 1150 8700 50  0001 C CNN
+F 3 "~" H 1150 8700 50  0001 C CNN
+	1    1150 8700
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J?
+U 1 1 66F5EB6F
+P 1250 9250
+F 0 "J?" V 1122 9530 50  0000 L CNN
+F 1 "Conn_01x05" V 1213 9530 50  0000 L CNN
+F 2 "" H 1250 9250 50  0001 C CNN
+F 3 "~" H 1250 9250 50  0001 C CNN
+	1    1250 9250
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J?
+U 1 1 66F6124E
+P 2500 8950
+F 0 "J?" V 2372 9130 50  0000 L CNN
+F 1 "Conn_01x04" V 2463 9130 50  0000 L CNN
+F 2 "" H 2500 8950 50  0001 C CNN
+F 3 "~" H 2500 8950 50  0001 C CNN
+	1    2500 8950
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
