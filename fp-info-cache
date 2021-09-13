@@ -1,4 +1,4 @@
-16499503345743434
+16509198175527418
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -44730,163 +44730,128 @@ EMI Filter
 19
 4
 Fuse
-Fuse_0201_0603Metric
-Fuse SMD 0201 (0603 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://www.vishay.com/docs/20052/crcw0201e3.pdf), generated with kicad-footprint-generator
-resistor
-0
-4
-2
-Fuse
 Fuse_0402_1005Metric
 Fuse SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator
-resistor
+fuse
+0
+2
+2
+Fuse
+Fuse_0402_1005Metric_Pad0.77x0.64mm_HandSolder
+Fuse SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator
+fuse handsolder
 0
 2
 2
 Fuse
 Fuse_0603_1608Metric
 Fuse SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator
-resistor
+fuse
 0
 2
 2
 Fuse
 Fuse_0603_1608Metric_Pad1.05x0.95mm_HandSolder
 Fuse SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator
-resistor handsolder
+fuse handsolder
 0
 2
 2
 Fuse
 Fuse_0805_2012Metric
 Fuse SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator
-resistor
+fuse
 0
 2
 2
 Fuse
 Fuse_0805_2012Metric_Pad1.15x1.40mm_HandSolder
 Fuse SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator
-resistor handsolder
+fuse handsolder
 0
 2
-2
-Fuse
-Fuse_01005_0402Metric
-Fuse SMD 01005 (0402 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.vishay.com/docs/20056/crcw01005e3.pdf), generated with kicad-footprint-generator
-resistor
-0
-4
 2
 Fuse
 Fuse_1206_3216Metric
 Fuse SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator
-resistor
+fuse
 0
 2
 2
 Fuse
 Fuse_1206_3216Metric_Pad1.42x1.75mm_HandSolder
 Fuse SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator
-resistor handsolder
+fuse handsolder
 0
 2
 2
 Fuse
 Fuse_1210_3225Metric
 Fuse SMD 1210 (3225 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator
-resistor
+fuse
 0
 2
 2
 Fuse
 Fuse_1210_3225Metric_Pad1.42x2.65mm_HandSolder
 Fuse SMD 1210 (3225 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator
-resistor handsolder
-0
-2
-2
-Fuse
-Fuse_1806_4516Metric
-Fuse SMD 1806 (4516 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://www.modelithics.com/models/Vendor/MuRata/BLM41P.pdf), generated with kicad-footprint-generator
-resistor
-0
-2
-2
-Fuse
-Fuse_1806_4516Metric_Pad1.57x1.80mm_HandSolder
-Fuse SMD 1806 (4516 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: https://www.modelithics.com/models/Vendor/MuRata/BLM41P.pdf), generated with kicad-footprint-generator
-resistor handsolder
+fuse handsolder
 0
 2
 2
 Fuse
 Fuse_1812_4532Metric
 Fuse SMD 1812 (4532 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://www.nikhef.nl/pub/departments/mt/projects/detectorR_D/dtddice/ERJ2G.pdf), generated with kicad-footprint-generator
-resistor
+fuse
 0
 2
 2
 Fuse
 Fuse_1812_4532Metric_Pad1.30x3.40mm_HandSolder
 Fuse SMD 1812 (4532 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: https://www.nikhef.nl/pub/departments/mt/projects/detectorR_D/dtddice/ERJ2G.pdf), generated with kicad-footprint-generator
-resistor handsolder
+fuse handsolder
 0
 2
 2
 Fuse
 Fuse_2010_5025Metric
 Fuse SMD 2010 (5025 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator
-resistor
+fuse
 0
 2
 2
 Fuse
 Fuse_2010_5025Metric_Pad1.52x2.65mm_HandSolder
 Fuse SMD 2010 (5025 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator
-resistor handsolder
+fuse handsolder
 0
 2
 2
 Fuse
 Fuse_2512_6332Metric
 Fuse SMD 2512 (6332 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator
-resistor
+fuse
 0
 2
 2
 Fuse
 Fuse_2512_6332Metric_Pad1.52x3.35mm_HandSolder
 Fuse SMD 2512 (6332 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator
-resistor handsolder
-0
-2
-2
-Fuse
-Fuse_2816_7142Metric
-Fuse SMD 2816 (7142 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size from: https://www.vishay.com/docs/30100/wsl.pdf), generated with kicad-footprint-generator
-resistor
-0
-2
-2
-Fuse
-Fuse_2816_7142Metric_Pad3.20x4.45mm_HandSolder
-Fuse SMD 2816 (7142 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size from: https://www.vishay.com/docs/30100/wsl.pdf), generated with kicad-footprint-generator
-resistor handsolder
+fuse handsolder
 0
 2
 2
 Fuse
 Fuse_2920_7451Metric
 Fuse SMD 2920 (7451 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size from: http://www.megastar.com/products/fusetronic/polyswitch/PDF/smd2920.pdf), generated with kicad-footprint-generator
-resistor
+fuse
 0
 2
 2
 Fuse
 Fuse_2920_7451Metric_Pad2.10x5.45mm_HandSolder
 Fuse SMD 2920 (7451 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size from: http://www.megastar.com/products/fusetronic/polyswitch/PDF/smd2920.pdf), generated with kicad-footprint-generator
-resistor handsolder
+fuse handsolder
 0
 2
 2
@@ -45220,9 +45185,37 @@ LVR200 PTC resettable polyswitch
 2
 2
 Fuse
+Fuse_Littelfuse-NANO2-451_453
+Littelfuse NANO2 https://www.littelfuse.com/~/media/electronics/datasheets/fuses/littelfuse_fuse_451_453_datasheet.pdf.pdf
+Fuse Nano2
+0
+2
+2
+Fuse
+Fuse_Littelfuse_372_D8.50mm
+Fuse, Littelfuse, 372, 8.5x8mm, https://www.littelfuse.com/~/media/electronics/datasheets/fuses/littelfuse_fuse_372_datasheet.pdf.pdf
+fuse tht radial
+0
+2
+2
+Fuse
 Fuse_Littelfuse_395Series
 Fuse, TE5, Littelfuse/Wickmann, No. 460, No560,
 Fuse TE5 Littelfuse/Wickmann No. 460 No560 
+0
+2
+2
+Fuse
+Fuse_Schurter_UMT250
+Surface Mount Fuse, 3 x 10.1 mm, Time-Lag T, 250 VAC, 125 VDC (https://us.schurter.com/bundles/snceschurter/epim/_ProdPool_/newDS/en/typ_UMT_250.pdf)
+Schurter fuse smd
+0
+2
+2
+Fuse
+Fuse_Schurter_UMZ250
+Surface Mount Fuse with Clip, 4.2 x 11.1 mm, Time-Lag T, 250 VAC, 125 VDC (https://us.schurter.com/bundles/snceschurter/epim/_ProdPool_/newDS/en/typ_UMZ_250.pdf)
+fuse smd mount holder
 0
 2
 2
@@ -45284,7 +45277,7 @@ fuse holder vertical 5x20mm
 2
 Fuse
 Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open
-Fuseholder horizontal open 5x20 Schurter 0031.8201, https://www.schurter.com/en/datasheet/typ_OGN.pdf
+Fuseholder horizontal open, 5x20mm, 500V, 16A, Schurter 0031.8201, https://us.schurter.com/bundles/snceschurter/epim/_ProdPool_/newDS/en/typ_OGN.pdf
 Fuseholder horizontal open 5x20 Schurter 0031.8201
 0
 2
@@ -45311,6 +45304,13 @@ Fuseholder 5x20mm horizontal closed
 3
 2
 Fuse
+Fuseholder_Cylinder-5x20mm_Schurter_OGN-SMD_Horizontal_Open
+Fuseholder horizontal open, 5x20mm, 500V, 16A (https://us.schurter.com/bundles/snceschurter/epim/_ProdPool_/newDS/en/typ_OGN-SMD.pdf)
+Fuseholder horizontal open 5x20 Schurter 0031.8221
+0
+2
+2
+Fuse
 Fuseholder_Cylinder-5x20mm_Stelvio-Kontek_PTF78_Horizontal_Open
 https://www.tme.eu/en/Document/3b48dbe2b9714a62652c97b08fcd464b/PTF78.pdf
 Fuseholder horizontal open 5x20 Stelvio-Kontek PTF/78
@@ -45330,6 +45330,27 @@ Shock-Safe closed Fuseholder, Schurter FUP Series, 6.3 x 32 mm, Slotted Cap, hor
 Fuseholder 6.3x32mm horizontal closed
 0
 3
+2
+Fuse
+Fuseholder_Keystone_3555-2
+Maxi APX ATX Automotive Blade Fuse Clip Holder https://www.keyelco.com/userAssets/file/M65p40.pdf
+Maxi APX ATX Automotive Blade Fuse Clip Holder
+0
+4
+2
+Fuse
+Fuseholder_Littelfuse_Nano2_154x
+Littelfuse NANO2 holder, https://www.littelfuse.com/~/media/electronics/datasheets/fuses/littelfuse_fuse_154_154t_154l_154tl_datasheet.pdf.pdf
+SMD Nano2 holder
+0
+2
+2
+Fuse
+Fuseholder_Littelfuse_Nano2_157x
+Littelfuse NANO2 holder, https://www.littelfuse.com/~/media/electronics/datasheets/fuses/littelfuse_fuse_157_datasheet.pdf.pdf
+SMD Nano2 holder
+0
+2
 2
 Fuse
 Fuseholder_TR5_Littelfuse_No560_No460
