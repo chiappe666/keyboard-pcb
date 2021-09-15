@@ -1,2 +1,5 @@
 
 caca.kicad_pcb
+keyboard-pcb.xml
+*.kicad_pcb-bak
+*.kicad_pcb-bak
