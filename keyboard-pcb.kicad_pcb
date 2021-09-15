@@ -64,7 +64,7 @@
     (aux_axis_origin 0 0)
     (visible_elements 7FFFFFFF)
     (pcbplotparams
-      (layerselection 0x01020_7ffffffe)
+      (layerselection 0x010fc_ffffffff)
       (usegerberextensions true)
       (usegerberattributes false)
       (usegerberadvancedattributes false)
@@ -85,7 +85,7 @@
       (plotinvisibletext false)
       (padsonsilk false)
       (subtractmaskfromsilk true)
-      (outputformat 3)
+      (outputformat 1)
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
@@ -894,6 +894,11 @@
       (net 1 GND))
     (model ${KISYS3DMOD}/Connector_USB.3dshapes/USB_C_Receptacle_HRO_TYPE-C-31-M-12.wrl
       (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model ${KIPRJMOD}/USB.3dshapes/HRO_TYPE-C-31-M-12.step
+      (offset (xyz -4.5 -3.8 0.1))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
@@ -1993,10 +1998,10 @@
       (net 155 /RESET))
     (pad 1 thru_hole rect (at 0 0 270) (size 1.65 1.65) (drill 1.1) (layers *.Cu *.Mask)
       (net 1 GND))
-    (model C:\Users\jfchi\OneDrive\Documentos\Libloader\SamacSys_Parts.3dshapes\CMI126601D03.stp
-      (at (xyz 0 0 0))
+    (model "${KIPRJMOD}/USB.3dshapes/CHAVE FIM DE CURSO.STEP"
+      (offset (xyz 5 0 6.5))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz 0 0 90))
     )
   )
 
@@ -15558,7 +15563,7 @@
   (segment (start 354.429 70.2285) (end 354.429 69.323) (width 0.254) (layer B.Cu) (net 167) (status 20))
   (segment (start 355.511 71.3105) (end 354.429 70.2285) (width 0.254) (layer B.Cu) (net 167) (status 10))
 
-  (zone (net 1) (net_name GND) (layer B.Cu) (tstamp 6140EF72) (hatch edge 0.508)
+  (zone (net 1) (net_name GND) (layer B.Cu) (tstamp 614135E3) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
@@ -16025,7 +16030,7 @@
       )
     )
   )
-  (zone (net 1) (net_name GND) (layer F.Cu) (tstamp 0) (hatch edge 0.508)
+  (zone (net 1) (net_name GND) (layer F.Cu) (tstamp 614135E0) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
