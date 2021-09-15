@@ -1,4 +1,4 @@
-(module USB_C_Receptacle_HRO_TYPE-C-31-M-12 (layer F.Cu) (tedit 5D3C0721)
+(module USB_C_Receptacle_HRO_TYPE-C-31-M-12 (layer F.Cu) (tedit 61414B93)
   (descr "USB Type-C receptacle for USB 2.0 and PD, http://www.krhro.com/uploads/soft/180320/1-1P320120243.pdf")
   (tags "usb usb-c 2.0 pd")
   (attr smd)
@@ -48,6 +48,11 @@
   (pad B1 smd rect (at 3.25 -4.045) (size 0.6 1.45) (layers F.Cu F.Paste F.Mask))
   (model ${KISYS3DMOD}/Connector_USB.3dshapes/USB_C_Receptacle_HRO_TYPE-C-31-M-12.wrl
     (at (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
+  (model ${KIPRJMOD}/USB.3dshapes/HRO_TYPE-C-31-M-12.step
+    (offset (xyz -4.5 -3.8 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
   )
